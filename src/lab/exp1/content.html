@@ -1,3 +1,4 @@
+
 <!-- This file needs to be edited by the lab developer to suit
 the requirements of their lab in particular.-->
 
@@ -28,7 +29,7 @@ edit -->
       <!-- Write the name of your lab and link it to the home 
       page of your lab (h1 tag is preferred while writing your 
       lab name)-->
-      <a href="../index.html">Physics Lab</a>	
+      <a href="../index.html">Physical Chemistry Lab</a>	
     </div>
 
     <!-- Add any additional element you want to add to the lab 
@@ -51,7 +52,7 @@ edit -->
       <header id="experiment-article-heading" class="heading">
         <!-- You can add a welcome message or title of the 
         experiment here -->
-        Simple Pendulum
+        Principles of Electron Paramagnetic Resonance Spectroscopy
         <!-- Add any additional element if required with proper 
         enclosing-->
       </header>
@@ -92,28 +93,13 @@ edit -->
           <div id="experiment-article-section-1-content" 
           class="content">	
             <p>
-            In this module, basic concepts of simple oscillator 
-            are explained. Initially, an example of simple 
-            pendulum is taken and the basic terminology i.e., 
-            what is <span class="term">initial displacement</span>, <span class="term">
-            initial velocity</span>,<span class="term">natural frequency
-            </span> and <span class="term">time period</span> are explained. 
-            Each of these terms is illustrated by giving an 
-            example, where user can enter his value and observe 
-            the behavior of structure for his input.
-            </p>
-
-            <p>
-            Simple harmonic oscillator consists of a <span class="term"> 
-            mass (m) </span> hanging from a string of <span class="term">
-            length (l)</span>, fixed at a pivot point P. 
-            When the mass is displaced from its <span class="term"> mean 
-            position </span> by giving some initial displacement 
-            (angle), oscillator starts swinging back and fourth 
-            with <span class="term">periodic motion</span>.
-            </p>
-
-          <img src="../images/Pendulum.JPG" alt="pendulum">
+Electron paramagnetic resonance (EPR) or otherwise known as electron spin resonance (ESR) spectroscopy is the resonant absorption of microwave radiation by an unpaired electron of an atom or molecule (paramagnetic species) when placed in a strong magnetic field.  EPR spectra are given as the first derivative of their  absorption spectra. It is a powerful technique used to study:
+<br/><br/>
+1. <b>Free Radicals:</b> Atoms, molecules or ions containing one unpaired electron either in the Solid, Liquid or Gaseous Phases<br/>
+2. <b>Transition Ions Including Actinide Ions:</b> These routinely may have up to five or seven unpaired electrons<br/>
+3. <b>Various ‘Point’ Defects in solids:</b> Localized Imperfections<br/>
+4. <b>Systems with More than One Unpaired Electron:</b> Triplets state systems, biradicals and multiradicals<br/>
+5. <b>Systems with Conducting Electrons:</b> Semiconductors and metals</p>
         </div>
 
 
@@ -140,31 +126,80 @@ edit -->
         element, we can also include images with <img> tag -->
         <div id="experiment-article-section-2-content" 
         class="content">
-          <p>
-          There are two solutions to \(ax^2 + bx + c = 0\) and 
-          they are $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$ 
-          </p>
-          <p>
-          By applying <span class="term">Newton's second law</span> for 
-          rotational systems, the equation of motion for the 
-          pendulum may be obtained.
-          </p> 
+     <p>	
+	When a molecule or compound with an unpaired electron is placed in a strong magnetic field, the spin of the unpaired electron can align in two different ways creating two spin states, ms = ± ½. The alignment can either be along the direction (parelle) to the magnetic filed which corresponds to the lower energy state ms = - ½ or opposite (antiparallel) to the direction of the applied magnetic field ms = + ½ . The two allignments have different energies and this difference in energy lifts  the degeneracy of the electron spin states.  The energy difference is given by:</p>
+<br>
+<!--<br/><center>
+∆ E = E+ - E- = hv = gmßB</center><br>
+<center><img src="./images/theory_html_fdfd8ac.png" /></center><br> -->
+<center>
+<img src="./images/equation1_exp1.png" style="width:201px; height:50px;" />
+</center>
+<p>
+h =  Planck’s constant (6.626 x 10-34 J s-1),<br>
+v =  the frequency of radiation,<br>
+ß = Bohr magneton (9.274 x 10-24 J T-1),<br>
+Bo = strength of the magnetic field in Tesla,<br>
+g =  the g-factor <span style="color:blue">(more explanation on g factor)</span><br><br>
 
-          <p>
-          Here \(\tau\)  =  <span class="term">Torque </span>;   I  =  
-          <span class="term">Moment of Inertia</span>;
-          &alpha; = <span class="term"> Angular
-          Velocity</span>. m is mass of the oscillator, l is
-          the length of the oscillator and \(\theta\) is initial
-          displacement. 
-          </p>
-          
-          <p>							
-          If the amplitude of the angular displacement is 
-          small then we can use the approximation 
-          $$ sin \theta \approx \theta $$
+<center>
+<img src="./images/figure1_theory_exp1.png" style="width:573px; height:400px;" />
+</center>
+</p>
+<p>
+During the experiement the values of h, v, and ß does not change and g value decrease as B increases. The g-factor is a unitless measurement of the intrinsic magnetic moment of the electron, and its value for a free electron is 2.0023. The concept of g can be roughly equated to that of chemical shift in NMR. EPR spectrum is the absorption of microwave frequency radiation ploted against the magnetic field intensity</p><br><br>
+<br>
+<p>
+<a name="c1">3.1.  Working principles of EPR:</a> 
+<br>
+ In an EPR experiment the field of the spectrometer magnet is swept linearly to excite some of the electrons in the lower energy  level to the upper energy level while the sample is exposed to fixed microwave irradiation. The free or the upaired electrons have a small magnetic field and  orient themselves parallel to the larger field produced by the spectrometer’s magnet. At a particular magnetic field strength the microwave irradiation will cause some of the free electrons to “flip” and orient against the spectrometer’s magnetic field.  This separation between the lower and the higher energy level is exactly matched by  our microwave frequency. The condition where  the magnetic field and the microwave frequency  are “just right” to produce an EPR resonance (or  absorption) is known as the resonance condition  is detected by the spectrometer.,  
 
-          </p>
+EPR spectroscopy can be carried out by either<br><br>1) varying the magnetic field and holding the frequency constant or <br>2) varying the frequency and holding the magnetic field constant (as is the case for NMR spectroscopy).<br><br> Typically in a comericial spectrometer works by varying the magnetic field and holding the frequency constant. EPR spectrometers working at frequencies ranging from several hundred MHz to several hundred Ghz are in use. 1-2 GHz (L-band) and 2-4 GHz (S-band), 8-10 GHZ (X-Band), 35 Ghz (Q-band) and 95 GHz (W-band). The most commonly used EPR spectrometer is in the range of 9-10 GHz (X-band). 
+</p><br><br>
+<p><a name="c2"> 3.2 Methods to record  EPR spectra:</a><br>
+<br>
+<b>Continous wave method </b>:  the sample is irradiated continuously with microwave radiation of fixed frequency while the magnetic field is slowly swept and the microwave absorption is measured for each field position<br>
+<br>
+<b> Pulse EPR </b>: short pulse of high microwave radiation are sent to the sample and the response in the absence radiation are recorded.
+
+Measuring a  CW-EPR spectroscopy can be  influenced by various parameters, both instrumental and experimental. The significant aspect of the measurement is to get a high resolved EPR spectrum from a low concentration sample of interest which is dependend on the the sensivity and the resolution of the spectrometer.  Microwave bridge and Resonator governs the sensitivity of the signal. Magnet, Magnet field controller, Magnet power supply and signal channel control the resolution of the spectrum obtained. 
+<center>
+<img src="./images/figure2_theory_exp1.gif" style="width:350px; height:353px;" />
+</center>
+</p><br>
+<p>Picture source: <a href="http://www.st-andrews.ac.uk/~mmwave/epr/what.html">http://www.st-andrews.ac.uk/~mmwave/epr/what.html </a><br>
+
+</p><br><br>
+<p><a name="c3">3.3 Application of EPR:</a><br>
+<br>
+ Only direct method to detect the presence of free radicals and to identify the paramagnetic species 
+Provides information on :<br>
+(i) molecular structure near the unpaired electron.<br> 
+(ii) EPR spectra lineshape gives insight to dynamic processes  molecular motions or fluidity.<br> 
+(iii) probes the structure of “active sites” in metalloproteins.<br>
+(iv) dose measurements for sterilization of medical goods and foods,<br>
+(v) detection of irradiated foods, and the dating of early human artifacts.<br> 
+<br><br>
+<a name="c4">3.4 EPR parameters:</a><br>
+<br>
+1. Matrix g (electronic Zeeman term):
+Couples magnetic field vector B with electronic spin S.
+Shows position of spectrum at any given direction of B.
+'g' can be written as:
+<br>
+<center>
+<img src="./images/equation2_exp1.gif" style="width:172px; height:43px;" />
+</center></p>
+<p>
+2. Matrix A (hyperfine term):
+Couples electronic spin with a nuclear spin.
+Describes splitting between lines as a function of field orientation.
+<br>
+3. Linewidth:
+The width of the spectral lines gives the interaction of the electrons with its environment. The electrons interact with the applied magnetic field and also the magnetic field that arises from the surrounding elctron or nuclear spin. The broader the line width larger is the interaction of the electron with the surrounding. 
+<br>
+
+	</p> 
 
         </div>
       </section>
@@ -186,14 +221,10 @@ edit -->
         <div id="experiment-article-section-3-content" 
         class="content">
           <p>
-            Objective of simple harmonic oscillator experiment 
-            is to understand the concept of <span class="term">time period 
-            </span>(natural frequency) in <span class="term"> harmonic 
-            oscillations </span>.
+            1. To understand the basic principle of  Electron Paramagnetic Resonance Spectroscopy<br>
+		2. To Interpret  simple experimental first order spectra and calculate some of the EPR parameters g, A and  w (linewidth)
           </p> 
        
-          <img  src="http://cite.iiit.ac.in/vlab/cITe/images/eerc/Expr1/simple-pendulum.JPG" 
-          alt="simple pendulum" />
 
         </div>
 
@@ -216,10 +247,10 @@ edit -->
         <div id="experiment-article-section-4-content" 
         class="content">
           <p>
-	        Place or link to your experiment java applet 
-	        or flash file here. 
-	        
-            
+<a href="ve_exp1.html"
+	onclick="window.open('ve_exp1.html',
+	null,'scrollbars=yes, width='  + (screen.availWidth)
+	+',height=' + (screen.availHeight)); return false">Click here</a>
           </p>
         </div>
 
@@ -241,38 +272,18 @@ edit -->
         <div id="experiment-article-section-5-content" 
         class="content">
           <p> 
-            Start the experiment with the default values of 
-            length, mass and intial displacement (in angle). 
-            Pause the experiment after few cycles and note 
-            the observation.
+
+Follow the procedure given below:<br><br>
+<span style="color:blue">Step1:</span> Click  'Load Sample' to load the sample tube to the cavity.<br>
+Observe: The sample tube with the sample is load on to the resonant cavity.<br><br>
+<span style="color:blue">Step 2:</span> Click 'Turn On the Microwave' to start the microwave radiation.<br>
+Observe: The sample is now irradiated at a fixed microwave frequency. But nothing happens to the sample ( See the graph at B=0, the electron is randomly oriented)<br><br>
+<span style="color:blue">Step 3:</span> Click ' Turn On the Magnet'.<br><br>
+<span style="color:blue">Step 4:</span> Increase the magnetic field strenght with the help of the slider provider in ingrement<br>
+Observe: As the intensity of the magnetic field increases, the electron is oriented parallel to the external magnetic filed.  At a particular field strength the microwave radiation drives the electron to the upper energy level. EPR spectrum is the absorption of microwave frequency radiation ploted against the magnetic field intensity. The obsorption spectrum along with its first derivative is given.
           </p> 
 
-        <h3>Observation 1:</h3> 
-          <ol> 
-            
-            <li>
-              Find the time period of the pendulum by noting the 
-              time interval of any one complete cycle from the 
-              response graph. 
-            </li> 
-
-            <li>
-              You may note that this time period value is same 
-              for any complete cycle.
-              <a  class="more" href="cITe/Documents/eerc/
-              pdf/1.manual.pdf">Read More</a>  
-            </li> 
-
-          </ol>
-
-          <a onclick="window.open('http://cite.iiit.ac.in/vlab/cITe/media/eerc/Expr1/shm.htm', 
-          null,'scrollbars=yes, width=' + (screen.availWidth) 
-          +',height=' + (screen.availHeight)); return false;"
-
-          href="http://cite.iiit.ac.in/vlab/cITe/media/eerc/Expr1/shm.htm">		   
-          <img src="http://cite.iiit.ac.in/vlab/cITe/images/demo.JPG" 
-          alt="" width="400" height="200"></a>
-
+   
           </div>
 
         </section>
@@ -294,74 +305,142 @@ edit -->
           class="content">
             
             <p>
-              
-              <b>Q1.</b> 
-              Time taken for one complete oscillation 
-              is called Time Period of the oscillator. <br> 
-              <input type="radio" name="q1" id="q1" value="1"> 
-                <font color="green"> True </font> <br> 
-              <input type="radio" name="q1" id="q1" value="0">
-                <font color="red"> False </font> <br/><br/> 
-              
-              <b>Q2.</b> 
-              Time period of the oscillator is constant for 
-              given values of mass, length and initial 
-              conditions.<br> 
-              <input type="radio" name="q2" id="q2" value="1"> 
-                <font color="green"> True </font> <br> 
-              <input type="radio" name="q2" id="q2"value="0">
-                <font color="red"> False </font> <br/><br/> 
-              
-              <b>Q3.</b> 
-              Value of Time period depends on initial 
-              conditions. <br> 
-              <input type="radio" name="q3" id="q3" value="1"> 
-                <font color="green"> True </font> <br> 
-              <input type="radio" name="q3" id="q3"value="0">
-                <font color="red"> False </font> <br/><br/> 
-              
-              <b>Q4.</b> 
-              Value of time period depends on mass. <br> 
-              <input type="radio" name="q4" id="q4" value="1"> 
-                <font color="green"> True </font> <br> 
-              <input type="radio" name="q4" id="q4" value="0">
-                <font color="red"> False </font> <br/><br/> 
-              
-              <b>Q5.</b> 
-              Value of time period depends on length of the 
-              oscillator. <br> 
-              <input type="radio" name="q5" id="q5" value="1"> 
-                <font color="green"> True </font> <br> 
-              <input type="radio" name="q5" id="q5"value="0">
-                <font color="red"> False </font> <br/><br/> 
-              <input type="submit" value="Submit Answers" 
-                class="button" />
+              <div class="success"><h2 style="color:green;text-align:center">right answer!</h2></div>
+<div class="failure"><h2 style="color:red;text-align:center">oops, wrong answer!</h2></div> 
+</p>
+<form name="q1" class="q1">	
+ <p><b>1. What is the wavelength range of the radiation used in EPR spectroscopy?</b><br>
+ <input type="radio" name="q1" id="q1" value="0" onClick="checkAnswer1(this.value,1)">X-Ray<br>
+ <input type="radio" name="q1" id="q1" value="1" onClick="checkAnswer1(this.value,1)">Ultraviolet<br>
+ <input type="radio" name="q1" id="q1" value="2" onClick="checkAnswer1(this.value,1)">Infrared<br>
+ <input type="radio" name="q1" id="q1" value="10" onClick="checkAnswer1(this.value,1)">Microwave<br><br>
+  </p></form>
+
+  <form class="q2">
+ <p><b>2. EPR is the resonant absorption of microwave radiation by paramagnetic systems in the presence of</b><br>
+<input type="radio" name="q2" id="q2" value="0" onClick="checkAnswer1(this.value,2)">Electric Field<br>
+<input type="radio" name="q2" id="q2" value="10" onClick="checkAnswer1(this.value,2)">Magnetic Field<br>
+<input type="radio" name="q2" id="q2" value="2" onClick="checkAnswer1(this.value,2)">Both a and b<br>
+<input type="radio" name="q2" id="q2" value="3" onClick="checkAnswer1(this.value,2)">None of the above<br><br></p>
+ </form>
+
+ <form class="q3">
+<p> <b>3. What causes the splitting of energy levels in a magnetic field?</b><br>
+ <input type="radio" name="q3" id="q3" value="0" onClick="checkAnswer1(this.value,3)">Hund’s Rule<br>
+ <input type="radio" name="q3" id="q3" value="10" onClick="checkAnswer1(this.value,3)">Zeeman Effect<br>
+<input type="radio" name="q3" id="q3" value="2" onClick="checkAnswer1(this.value,3)">van der Waals interactions<br>
+<input type="radio" name="q3" id="q3" value="3" onClick="checkAnswer1(this.value,3)">Aufbau Principle<br><br></p>
+</form>
+
+<form class="q4">
+<p> <b>4. EPR spectroscopy is a direct and definitive technique for detection and quantification of the following</b><br>
+<input type="radio" name="q4" id="q4" value="0" onClick="checkAnswer1(this.value,4)">Free radicals<br>
+<input type="radio" name="q4" id="q4" value="1" onClick="checkAnswer1(this.value,4)">Paramagnetic species<br>
+<input type="radio" name="q4" id="q4" value="10" onClick="checkAnswer1(this.value,4)">Both a and b<br>
+<input type="radio" name="q4" id="q4" value="3" onClick="checkAnswer1(this.value,4)">None of the above.<br><br></p>
+</form>
+
+<form class="q5">
+<p> <b>5. What factor of a nucleus is directly related to the spectral line spacing and, in the simplest cases, is essentially the spacing itself.</b><br>
+<input type="radio" name="q5" id="q5" value="10" onClick="checkAnswer1(this.value,5)">Hyperfine splitting constant<br>
+<input type="radio" name="q5" id="q5" value="1" onClick="checkAnswer1(this.value,5)">Atom<br>
+<input type="radio" name="q5" id="q5" value="2" onClick="checkAnswer1(this.value,5)">Magnetic moment<br>
+<input type="radio" name="q5" id="q5" value="3" onClick="checkAnswer1(this.value,5)">Electron paramagnetic Resonance<br><br></p>
+</form>
+
+<form class="q6">
+<p> <b>6. The basic physical concepts of EPR are analogous to this measurement study but it is electron spins that are excited instead of spins of atomic nuclei.</b><br>
+<input type="radio" name="q6" id="q6" value="0" onClick="checkAnswer1(this.value,6)">Magnetic Moment<br>
+<input type="radio" name="q6" id="q6" value="1" onClick="checkAnswer1(this.value,6)">NMR spectroscopy<br>
+<input type="radio" name="q6" id="q6" value="2" onClick="checkAnswer1(this.value,6)">Stable Nuclide<br>
+<input type="radio" name="q6" id="q6" value="10" onClick="checkAnswer1(this.value,6)">Nuclear Magnetic resonance<br><br></p>
+</form>
+
+<form class="q7" >
+ <p><b>7. Which of the following is not true for an unpaired electron interacting only with a magnetic field?</b><br>
+<input type="radio" name="q7" id="q7" value="0" onClick="checkAnswer1(this.value,7)">The energy difference between the two spin states increases linearly with increasing magnetic field strength<br>
+<input type="radio" name="q7" id="q7" value="1" onClick="checkAnswer1(this.value,7)">The energy levels are labeled by the projection of the electron spin on the direction of the magnetic field<br>
+<input type="radio" name="q7" id="q7" value="2" onClick="checkAnswer1(this.value,7)">The energy of the two spin states is equal when there is no applied magnetic field<br>
+<input type="radio" name="q7" id="q7" value="10" onClick="checkAnswer1(this.value,7)">The lower energy state occurs with the magnetic moment of the electron is aligned against the magnetic field<br><br></p>
+</form>
+
+<form class="q8" >
+<p> <b>8. Which of the following molecules can not be studied by EPR?</b><br>
+<input type="radio" name="q8" id="q8" value="0" onClick="checkAnswer1(this.value,8)">Free radicals in the solid, liquid or gaseous phases<br>
+<input type="radio" name="q8" id="q8" value="1" onClick="checkAnswer1(this.value,8)"> Paramagnetic transition metal complexes<br>
+<input type="radio" name="q8" id="q8" value="2" onClick="checkAnswer1(this.value,8)"> Systems with more than one unpaired electron<br>
+<input type="radio" name="q8" id="q8" value="10" onClick="checkAnswer1(this.value,8)">All of the above can be studied by EPR<br><br></p>
+</form>
+
+<form class="q9">
+<p> <b>9. EPR spectroscopy can be carried out by</b><br>
+<input type="radio" name="q9" id="q9" value="0" onClick="checkAnswer1(this.value,9)">Varying the magnetic field and holding the frequency constant<br>
+<input type="radio" name="q9" id="q9" value="1" onClick="checkAnswer1(this.value,9)">varying the frequency and holding the magnetic field constant<br>
+<input type="radio" name="q9" id="q9" value="2" onClick="checkAnswer1(this.value,9)">None of the above.<br>
+<input type="radio" name="q9" id="q9" value="10" onClick="checkAnswer1(this.value,9)">Both of the above<br><br></p>
+</form>
+
+<form class="q10">
+  <h2>Solutions</h2><br>
+ <p><b>1. What is the wavelength range of the radiation used in EPR spectroscopy?</b><br>
+ X-Ray<br>
+ Ultraviolet<br>
+Infrared<br>
+<span style="color:green">Microwave</span><br><br>
+ 
+ <b>2. EPR is the resonant absorption of microwave radiation by paramagnetic systems in the presence of</b><br>
+Electric Field<br>
+<span style="color:green">Magnetic Field</span><br>
+Both a and b<br>
+None of the above<br><br>
+
+ <b>3. What causes the splitting of energy levels in a magnetic field?</b><br>
+Hund’s Rule<br>
+<span style="color:green">Zeeman Effect</span><br>
+van der Waals interactions<br>
+Aufbau Principle<br><br>
+
+ <b>4. EPR spectroscopy is a direct and definitive technique for detection and quantification of the following</b><br>
+Free radicals<br>
+Paramagnetic species<br>
+<span style="color:green">Both a and b</span><br>
+None of the above.<br><br>
+
+ <b>5. What factor of a nucleus is directly related to the spectral line spacing and, in the simplest cases, is essentially the spacing itself.</b><br>
+<span style="color:green">Hyperfine splitting constant</span><br>
+Atom<br>
+Magnetic moment<br>
+Electron paramagnetic Resonance<br><br>
+
+ <b>6. The basic physical concepts of EPR are analogous to this measurement study but it is electron spins that are excited instead of spins of atomic nuclei.</b><br>
+Magnetic Moment<br>
+NMR spectroscopy<br>
+Stable Nuclide<br>
+<span style="color:green">Nuclear Magnetic resonance</span><br><br>
+
+ <b>7. Which of the following is not true for an unpaired electron interacting only with a magnetic field?</b><br>
+The energy difference between the two spin states increases linearly with increasing magnetic field strength<br>
+The energy levels are labeled by the projection of the electron spin on the direction of the magnetic field<br>
+The energy of the two spin states is equal when there is no applied magnetic field<br>
+<span style="color:green">The lower energy state occurs with the magnetic moment of the electron is aligned against the magnetic field</span><br><br>
+
+ <b>8. Which of the following molecules can not be studied by EPR?</b><br>
+Free radicals in the solid, liquid or gaseous phases<br>
+Paramagnetic transition metal complexes<br>
+Systems with more than one unpaired electron<br>
+<span style="color:green">All of the above can be studied by EPR</span><br><br>
+
+ <b>9. EPR spectroscopy can be carried out by</b><br>
+Varying the magnetic field and holding the frequency constant<br>
+varying the frequency and holding the magnetic field constant<br>
+None of the above.<br>
+<span style="color:green">Both of the above</span><br><br>
+</form>
+
             </p>
 
           </div>
 
-        </section>
-
-        <section id="experiment-article-section-7">
-	  
-          <div id="experiment-article-section-7-icon" 
-          class="icon">
-	    <!-- Enclose the icon image of your lab. -->
-	    <img src="../images/procedure.jpg" />
-	  </div>
-	
-          <div id="experiment-article-section-7-heading" 
-          class="heading">
-	    Procedure
-	  </div>
-	
-          <div id="experiment-article-section-7-content" 
-          class="content">
-	    <p>
-	      Procedure for the experiment is as follows.
-	    </p>
-	  </div>
-	
         </section>
 			
 		
@@ -380,25 +459,121 @@ edit -->
 
           <div id="experiment-article-section-8-content" 
           class="content">
-            <ul>	
-              <li>
-                <a href="http://en.wikipedia.org/wiki/
-                Simple_harmonic_motion">http://en.wikipedia.org/wiki/Simple_harmonic_motion</a>
-              </li>
-              <li>
-                <a href="http://www.physics.uoguelph.ca/
-                tutorials/shm/Q.shm.html">http://www.physics.uoguelph.ca/tutorials/shm/Q.shm.html</a>
-              </li> 
-              <li>
-                Dynamics of structures by Anil K chopra. 
-              </li> 
-              <li>
-                <a href="http://surendranath.tripod.com/Applets/
-                Oscillations/SHM/SHMApplet.html">http://surendranath.tripod.com/Applets/Oscillations/SHM/SHMApplet.html</a> 
-              </li>
+            <h2> Book References:</h2><br><p>
+1. Principles and Applications of ESR Spectroscopy
+Lund, Anders, Shiotani, Masaru, Shimada, Shigetaka <br>
+2. Electron Paramagnetic Resosnance, A practitioners's Toolkit.
+Marina Brustolon, Elio Giamello<br>
+3. Electron Spin Resonance; Elmentary Theory and Pratical Applications, 2nd Edition(2007).
+Weil and Bolton<br>
+4. Transition Ion Electron Paramagnetic Resonance (1990).
+Pilbrow<br>
+5. Physical Methods for Chemists. 2nd edition, Saunders College Publishing, Mexico (1992).
+R. S. Drago,<br>
+6. In Physical Methods in Bioinorganic Chemistry Spectroscopy and Magnetism. Ed. L. Que, ￼University Science Books, Sausalito, CA (2000).
+G. Palmer, <br><br>
+</p>
+<h2>Links  and more reading:</h2><br>
+<p>1. <a href=http://www.bruker-biospin.com/cwpractice.html>http://www.bruker-biospin.com/cwpractice.html</a><br>
+2. <a href=http://www.bruker-biospin.com/whatisepr.html>http://www.bruker-biospin.com/whatisepr.html</a><br>
+3. <a href=http://www.google.com/search?tbs=bks%3A1&tbo=1&q=electron+paramagnetic+resonance&oq=Electron+para>http://www.google.com/search?tbs=bks%3A1&tbo=1&q=electron+paramagnetic+resonance&oq=Electron+para</a><br>
+4. <a href=http://en.wikipedia.org/wiki/Electron_paramagnetic_resonance>http://en.wikipedia.org/wiki/Electron_paramagnetic_resonance</a><br>
+5. Use of EPR Spectroscopy in Elucidating Electronic Structures of Paramagnetic Transition Metal Complexes  J. Chem. Educ., 2001, 78 (5), p 666<br>
+6. An EPR Experiment for the Undergraduate Physical Chemistry Laboratory  Journal of Chemical Education2000 77 (11), 1489<br>
+7. Analysis of the isotropic EPR spectrum of K3[Cr(CN)5NO]: An inorganic chemistry laboratory experiment . J. Chem. Educ., 1993, 70 (8), p 675
+</p>
             </ul>
           </div>
 
+        </section>
+        <section id="experiment-article-section-9">
+	  
+          <div id="experiment-article-section-9-icon" 
+          class="icon">
+	    <!-- Enclose the icon image of your lab. -->
+	    <img src="../images/experiments.jpg" />
+	  </div>
+	
+          <div id="experiment-article-section-9-heading" 
+          class="heading">
+	    Experiments
+	  </div>
+	
+          <div id="experiment-article-section-9-content" 
+          class="content">
+	    <p>
+	      <ul id="list-of-experiments">
+	  <li class="experiment-thumb"> 
+					<a href="../exp6/"> 
+						<strong>Instrumentation and working principles of infra red (IR) spectroscopy using salt plates.</strong> 
+					</a> 
+				</li> 
+	
+				<li class="experiment-thumb"> 
+					<a href="../exp7/"> 
+						<strong>Instrumentation and working principles of solutions infra red (IR) spectroscopy </strong> 
+					</a> 
+				</li> 
+ 
+				<li class="experiment-thumb"> 
+					<a href="../exp8/"> 
+						<strong>Instrumentation and working principles principles of mass spectroscopy</strong> 
+					</a> 
+				</li> 
+				<li class="experiment-thumb"> 
+					<a href="../exp9/"> 
+						<strong>Determination of molar mass of simple compounds using mass spectroscopy</strong> 
+					</a> 
+				</li> 
+				<li class="experiment-thumb"> 
+					<a href="../exp5/"> 
+						<strong>Nuclear magnetic resosnace spectrocopy and evaulation of simple 1H NMR spectra of select organic compounds</strong> 
+					</a> 
+				</li> 
+	
+ 
+ 
+				<li class="experiment-thumb"> 
+					<a href="../exp10/"> 
+						<strong>Identification of unknown components using spectroscopic techniques.</strong> 
+					</a> 
+				</li> 
+				<li class="experiment-thumb"> 
+					<a href="../exp1/"> 
+						<strong>Principles of electron paramagnetic resonance spectroscopy</strong> 
+					</a> 
+				</li> 
+				<li class="experiment-thumb"> 
+					<a href="../exp2/"> 
+						<strong>Electron paramagnetic resonance spectral studies of select organic free radicals</strong> 
+					</a> 
+				</li> 
+	  </ul>
+	    </p>
+	  </div>
+	
+        </section>
+        <section id="experiment-article-section-10">
+	  
+          <div id="experiment-article-section-10-icon" 
+          class="icon">
+	    <!-- Enclose the icon image of your lab. -->
+	    <img src="../images/feedback.jpg" />
+	  </div>
+	
+          <div id="experiment-article-section-10-heading" 
+          class="heading">
+	    Feedback
+	  </div>
+	
+          <div id="experiment-article-section-10-content" 
+          class="content">
+	    <p>
+	      <a href="http://virtual-labs.ac.in/feedback/" target="_blank">Feedback</a>
+
+	    </p>
+	  </div>
+	
         </section>
 
       </div>
