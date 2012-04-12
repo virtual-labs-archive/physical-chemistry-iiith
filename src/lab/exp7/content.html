@@ -9,49 +9,6 @@ edit -->
 <!DOCTYPE html>
 <html>
 <head>
-  <script type="text/javascript">
-          $(document).ready(function(){
-
-			          $(".q2").hide();
-				  $(".q3").hide();
-				  $(".q4").hide();
-				  $(".q5").hide();
-				  $(".q6").hide();
-				  $(".q7").hide();
-				  $(".q8").hide();
-				  $(".q9").hide();
-				  $(".q10").hide();
-				  $(".success").hide();
-				  $(".failure").hide();
-				  });
-var count=0;
-function checkAnswer1(value,t)
-{
-	var t1=t+1;
-	if(value==10){
-		$(".failure").hide();
-		$(".success").show();
-		$(".q"+t).hide();
-		$(".success").hide(1000);
-		$(".q"+t1).show(2000);
-		count+=1;
-	}
-	else{
-		$(".success").hide();
-		$(".failure").show();
-		$(".q"+t).hide();
-		$(".failure").hide(1000);
-		$(".q"+t1).show(2000);
-	}
-	if(t1==11)
-	{
-		$(".success").hide();
-		$(".failure").hide();
-		setTimeout("alert('You secured '+ count +' out of 10')",2000);
-	}
-}
-</script>
-
 </head>
 <body>
 
@@ -327,6 +284,53 @@ Follow the procedure given below:<br><br>
             <div class="success"><h2 style="color:green;text-align:center">right answer!</h2></div>
 <div class="failure"><h2 style="color:red;text-align:center">oops, wrong answer!</h2></div> 
 <p>
+ <script type="text/javascript" src="../js/jquery-1.4.2.min.js"></script>
+
+ <script type="text/javascript" src="../js/modernizr-1.5.min.js">
+  </script>
+  <script type="text/javascript">
+          $(document).ready(function(){
+
+			          $(".q2").hide();
+				  $(".q3").hide();
+				  $(".q4").hide();
+				  $(".q5").hide();
+				  $(".q6").hide();
+				  $(".q7").hide();
+				  $(".q8").hide();
+				  $(".q9").hide();
+				  $(".q10").hide();
+				  $(".success").hide();
+				  $(".failure").hide();
+				  });
+var count=0;
+function checkAnswer1(value,t)
+{
+	var t1=t+1;
+	if(value==10){
+		$(".failure").hide();
+		$(".success").show();
+		$(".q"+t).hide();
+		$(".success").hide(1000);
+		$(".q"+t1).show(2000);
+		count+=1;
+	}
+	else{
+		$(".success").hide();
+		$(".failure").show();
+		$(".q"+t).hide();
+		$(".failure").hide(1000);
+		$(".q"+t1).show(2000);
+	}
+	if(t1==11)
+	{
+		$(".success").hide();
+		$(".failure").hide();
+		setTimeout("alert('You secured '+ count +' out of 10')",2000);
+	}
+}
+</script>
+
 
 <form name="q1" class="q1">
 
