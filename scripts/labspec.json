@@ -80,11 +80,11 @@
                 }
             ], 
             "discipline": [
-                "Computer Science & Engineering"
+                "Physical Chemistry"
             ], 
-            "id": "cse18", 
-            "integration_level": 5, 
-            "name": "Computer Graphics", 
+            "id": "ccnsb06", 
+            "integration_level": 4, 
+            "name": "Physical Chemistry", 
             "server-side": true, 
             "status": "Released", 
             "type": ""
