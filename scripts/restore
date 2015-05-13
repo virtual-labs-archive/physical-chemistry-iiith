@@ -1,4 +1,4 @@
-#!/bin/bash
+#/bin/bash
 # Restore Script for Physical Chemistry Lab
 
 # Restore Script restores the backup of the data used by the lab.
@@ -9,6 +9,3 @@
 
 # To use restore script, run the command
 # ./scripts/restore
- 
-
-echo -e "There is no data used by this lab.\nHence, nothing needs to be restored."
