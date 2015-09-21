@@ -1,0 +1,306 @@
+<!-- This file needs to be edited by the lab developer to suit
+their lab rquirements. -->
+
+<!-- Add class="default" to include any element as it is
+specified in default.html. 
+Do not include class="default" to the elements that you want to
+edit -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>My Lab</title>
+</head>
+
+<body>
+
+<div id="lab"> <!-- The Lab Document Container-->
+  
+  <!-- The lab Header contains the logo and the name of the lab, 
+  usually displayed on the top of the page-->
+
+  <header id="lab-header">
+    
+    <div id="lab-header-logo" class="logo">
+      <!-- Enclose the logo image of your lab or write it in 
+      text-->
+      <img src="images/logo.jpg" />
+    </div>
+
+    <div id="lab-header-heading" class="heading">
+    <!-- Write the name of your lab and link it to the home page
+    of your lab. -->
+      <a href="index.php">Physical Chemistry Lab</a>	
+    </div>
+
+    <!-- Add any additional element or link you want to add to 
+    the lab header, For example : Help (Enclosing them with 
+    suitable div is recommended)-->
+  
+  </header>
+
+
+  <!-- The lab article is the main content area where all the 
+  experiment content sits-->
+  <article id="lab-article">
+
+
+    <!-- The lab article has an header, optional navigational 
+    menu, number of sections, an optional sidebar and a closing 
+    footer-->
+    <header id="lab-article-header">
+      
+      <!-- You can add a welcome message or title of the 
+      experiment enclosed in h1 tag here -->
+      <div id="lab-article-heading" class="heading">
+      Physical Chemistry Lab
+      </div>
+
+      <!-- Add any additional element if required with proper 
+      enclosing-->
+    </header>
+
+
+    <!-- Navigation menu is useful to organize the view of 
+    multiple sections inside the article-->
+    <nav id="lab-article-navigation" class="default">
+      
+      <!-- The menu will be dynamically generated to contain the 
+      headings of your sections or instead write the menu items 
+      of your choice individually enclosed in <li> tag as shown 
+      below-->
+
+    </nav>
+
+    
+    <!-- All the sections of your lab or experiment can be 
+    enclosed together with a div element as shown below-->
+    <div id="lab-article-sections">
+			
+      <!-- First section of the article-->
+      <section id="lab-article-section-1">
+        <div id="lab-article-section-1-icon" class="icon">
+          <!-- Enclose the icon image for the section. -->
+	  <img src="images/introduction.jpg" />
+	</div>
+
+
+        <!-- The heading for the section can be enclosed in a 
+        div tag. -->
+	<div id="lab-article-section-1-heading" class="heading">
+	Introduction
+	</div>
+				
+	<!-- Write the section content inside a paragraph 
+        element, You can also include images with <img> tag -->
+	<div id="lab-article-section-1-content" class="content">
+	  <p>
+	  Physical chemistry virtual laboratory is designed to introduce some spectroscopic and analytical techniques to students at various levels. Depending upon the nature of the source (energy), the material and their interaction there are various spectroscopic techniques that are widely studied in understanding chemical
+	  molecules and processes. In this context, we have developed ten sets of experiments which will cover the following techniques:
+	  Electron paramagnetic resonance spectroscopy which involves study of an unpaired electron of an atom or molecule (paramagnetic species)
+	Proton Nuclear Magnetic Resonance Spectroscopy in which the hydrogen nuclei of the compound/substance is studied in order to determine the structure of organic compound
+	Infrared spectroscopy involves the infrared region of the electromagnetic spectrum, is used for determination of functional groups in the compound.
+	Mass spectroscopy is an analytical tool to weigh the molar masses of a given molecule.
+	Voltammetry is an electroanalytical method in which the current is measured as a function of applied potential. The voltammogram gives the information of the analyte measured.
+
+	Exposure to sophisticated and advance techniques, skills necessary to conduct experiment and interpret the data/spectra would be the outcome of the laboratory.
+
+	  </p>
+	</div>
+	
+      </section>
+		
+
+      <!-- Second section of the article-->
+      <section id="lab-article-section-2">
+        
+        <div id="lab-article-section-2-icon" class="icon">
+          <!-- Enclose the icon image for the section. -->
+	  <img src="images/experiments.jpg" />
+	</div>
+
+
+        <!-- The heading for the section can be enclosed in a 
+        div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-2-heading" class="heading">
+	  Experiments
+	</div>
+				
+	<!-- Write the section content inside a paragraph 
+        element, You can also include images with <img> tag -->
+        <div id="lab-article-section-2-content" class="content">
+	  <ul id="list-of-experiments">
+	  <li class="experiment-thumb"> 
+					<a href="exp6/"> 
+						<strong>Instrumentation and working principles of infra red (IR) spectroscopy using salt plates.</strong> 
+					</a> 
+				</li> 
+	
+				<li class="experiment-thumb"> 
+					<a href="exp7/"> 
+						<strong>Instrumentation and working principles of solutions infra red (IR) spectroscopy </strong> 
+					</a> 
+				</li> 
+ 
+				<li class="experiment-thumb"> 
+					<a href="exp8/"> 
+						<strong>Instrumentation and working principles principles of mass spectroscopy</strong> 
+					</a> 
+				</li> 
+				<li class="experiment-thumb"> 
+					<a href="exp9/"> 
+						<strong>Determination of molar mass of simple compounds using mass spectroscopy</strong> 
+					</a> 
+				</li> 
+				<li class="experiment-thumb"> 
+					<a href="exp5/"> 
+						<strong>Nuclear magnetic resosnace spectrocopy and evaulation of simple 1H NMR spectra of select organic compounds</strong> 
+					</a> 
+				</li> 
+	
+ 
+ 
+				<li class="experiment-thumb"> 
+					<a href="exp10/"> 
+						<strong>Identification of unknown components using spectroscopic techniques.</strong> 
+					</a> 
+				</li> 
+				<li class="experiment-thumb"> 
+					<a href="exp1/"> 
+						<strong>Principles of electron paramagnetic resonance spectroscopy</strong> 
+					</a> 
+				</li> 
+				<li class="experiment-thumb"> 
+					<a href="exp2/"> 
+						<strong>Electron paramagnetic resonance spectral studies of select organic free radicals</strong> 
+					</a> 
+				</li> 
+	  </ul>
+	</div>
+	
+      </section>
+
+
+	 <!-- Second section of the article-->
+      <section id="lab-article-section-3">
+        
+        <div id="lab-article-section-3-icon" class="icon">
+          <!-- Enclose the icon image for the section. -->
+	  <img src="images/target_audience.jpg" />
+	</div>
+
+
+        <!-- The heading for the section can be enclosed in a 
+        div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-3-heading" class="heading">
+	 Target Audience
+	</div>
+				
+	<!-- Write the section content inside a paragraph 
+        element, You can also include images with <img> tag -->
+        <div id="lab-article-section-3-content" class="content">
+	  <p>
+		<ul>
+		  <li> UG </li>
+		  <ul>
+		     <li> Final year of B.Tech. Chemical/Materials/Biotechnolgy Engineering</li>     <li> B. Pharm., Biomed. Engg. </li>
+	 	 </ul>
+
+		  <li> PG </li>
+		  <ul>
+		    <li> Chemistry, Chemical/Materials/Biomedical Engg., Biotech & Pharm. </li>
+		    <li> 1st year of Ph.D. in Chemistry related fields </li>
+		  </ul>
+		</ul>
+	  </p>
+	</div>
+	
+      </section>
+
+	<section id="lab-article-section-4">
+        
+        <div id="lab-article-section-4-icon" class="icon">
+          <!-- Enclose the icon image for the section. -->
+	  <img src="images/readings.jpg" />
+	</div>
+
+
+        <!-- The heading for the section can be enclosed in a 
+        div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-4-heading" class="heading">
+	 Courses Aligned
+	</div>
+				
+	<!-- Write the section content inside a paragraph 
+        element, You can also include images with <img> tag -->
+        <div id="lab-article-section-4-content" class="content">
+	  <p>
+	    Chemical sciences curriculum covered by the lab:<br/> 
+		Majority of the Spectroscopy and Analytical techniques that are studied at the undergraduate and post graduate chemical sciences courses have been covered.
+		 
+		Electron Paramagnetic Resonance Spectroscopy (EPR),
+		Nuclear Magnetic Resonance Spectroscopy (NMR).
+		Infra Red Spectroscopy (IR),
+		Electron Ionisation or Impact mass spectroscopy (EI-MS) and
+		Cyclic Voltammetry (CV)
+	  </p>
+	</div>
+	
+      </section>
+
+	<section id="lab-article-section-5">
+        
+        <div id="lab-article-section-5-icon" class="icon">
+          <!-- Enclose the icon image for the section. -->
+	  <img src="images/sys_req.jpg" />
+	</div>
+
+
+        <!-- The heading for the section can be enclosed in a 
+        div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-5-heading" class="heading">
+	 Pre-requisite Softwares
+	</div>
+				
+	<!-- Write the section content inside a paragraph 
+        element, You can also include images with <img> tag -->
+        <div id="lab-article-section-5-content" class="content">
+	  <p>
+	   <ul> 
+		<li>Java allows you to play online virtual labs.</li>
+		<li>The Java 3D API enables the creation of three-dimensional graphics applications and Internet-based 3D applets. It provides high-level constructs for creating and manipulation 3D geometry and building the structures used in rendering that geometry. With this software, you can efficiently define and render very large virtual worlds.</li>
+		<li>Adobe Flash (formerly Macromedia Flash) is a multimedia platform used to add animation, video, and interactivity to web pages. </li>
+	   </ul>
+	  </p>
+	</div>
+	
+      </section>
+
+      </div>	
+
+      <!-- An article can have a sidebar that contain related 
+      links and additional material (it is optional at this 
+      moment)-->
+      <aside id="lab-article-sidebar" class="default">
+	<!-- put the content that you want to appear in the 
+        sidebar-->	
+      </aside>
+		
+      <!-- Article footer can display related content and 
+      additional links -->						
+      <footer id="lab-article-footer" class="default">
+	<!-- Put the content that you want to appear here-->
+      </footer>
+
+    </article>
+	
+  <!-- Links to other labs, about us page can be kept the lab 
+  footer-->
+  <footer id="lab-footer" class="default">
+    <!-- Put the content here-->
+  </footer>
+
+</div>
+</body>
+</html>
