@@ -10,10 +10,10 @@
   - Processor:i5
 
 * Objective
-  - To view the Experiment of Instrumentation and Working Principles Principles of Mass Spectroscopy"
+  - To view the Experiment of "Determination of Molar Mass of Simple Compounds Using Mass Spectroscopy"
 
 * Pre conditions
-  - Refer to first test case [[https://github.com/Virtual-Labs/physical-chemistry-iiith/blob/master/test-cases/integration-test-cases/EXPT-3/Instrumentation-and-Working-Principles-Principles-of-Mass-Spectroscopy_01_Usability_smk.org][Instrumentation-and-Working-Principles-Principles-of-Mass-Spectroscopy_01_Usability_smk.org]]
+  - Refer to first test case [[https://github.com/Virtual-Labs/physical-chemistry-iiith/blob/master/test-cases/integration-test-cases/EXPT-4/Determination-of-Molar-Mass-of-Simple-Compounds-Using-Mass-Spectroscopy_01_Usability_smk.org][Determination-of-Molar-Mass-of-Simple-Compounds-Using-Mass-Spectroscopy_01_Usability_smk.org]]
 
 * Post conditions
   - Nil
