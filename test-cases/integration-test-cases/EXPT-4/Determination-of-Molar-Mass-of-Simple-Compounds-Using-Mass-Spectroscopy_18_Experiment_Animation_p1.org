@@ -1,0 +1,53 @@
+#+Title: Test Case
+#+Date: 31 Jan 2017
+#+Author: Sravanthi. B
+
+* Environment
+
+  +  OS: Windows 7, Linux
+  +  Browsers: Firefox,Chrome
+  +  Bandwidth : 100Mbps
+  +  Hardware Configuration:8GBRAM,
+  +  Processor:i5
+
+* Objective
+
+  +  To view the Objective of "Determination of Molar Mass of Simple Compounds Using Mass Spectroscopy" experiment.
+
+* Pre conditions
+
+  +  Refer to first test case [[https://github.com/Virtual-Labs/physical-chemistry-iiith/blob/master/test-cases/integration-test-cases/EXPT-4/Determination-of-Molar-Mass-of-Simple-Compounds-Using-Mass-Spectroscopy_01_Usability_smk.org][Determination-of-Molar-Mass-of-Simple-Compounds-Using-Mass-Spectroscopy_01_Usability_smk.org]]
+
+* Post conditions
+
+  +  Nil
+
+* Test Steps
+
+  +  Click on the "Click here" link
+  +  Check whether all the animations are created as desired/existed.
+
+* Expected result
+
+   1. A new tab with the experiment should be opened. 
+   2. Animation should be present when the sample is collected from the Solvent
+      container.
+   3. Animation should be present when the sample is transferred from
+      Sample container to empty container.
+   4. Animation should be present when we try to mix the solution once
+      the sample is poured in to an empty container. 
+   5. Animation should be present when the solution is collected from
+      the "Sample Bottle".
+   6. Animation should be present when the sample is injected in to the
+      sample inlet. This animation should be repeated again when we try
+      to inject the solution for the experiment. 
+   7. Animation should be present for the inner procedure of the
+      spectrometer. 
+   8. Animations for ions should be present.
+   9. Animations for the instruments that collects the sample and the
+      solution should be present. 
+  10. Animation for the arrow mark should be present.
+  11. All the above animations should present with out any
+      distortions. 
+
+* Review/comments
