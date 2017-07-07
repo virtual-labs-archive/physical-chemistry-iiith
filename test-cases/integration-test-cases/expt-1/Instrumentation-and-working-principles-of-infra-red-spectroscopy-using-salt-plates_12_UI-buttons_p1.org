@@ -1,0 +1,42 @@
+#+Title: Test case
+#+Author: SravanthiB
+#+Date: 30.01.2017
+
+* Environment
+  - OS: Windows 7, Linux
+  - Browsers: Firefox,Chrome
+  - Bandwidth : 100Mbps
+  - Hardware Configuration:8GBRAM, 
+  - Processor:i5
+
+* Objective
+  - To view the Experiment of "Instrumentation and working principles of infra red spectroscopy using salt plates"
+
+* Pre conditions
+  - Refer to first test case [[https://github.com/Virtual-Labs/physical-chemistry-iiith/blob/master/test-cases/integration-test-cases/expt-1/Instrumentation-and-working-principles-of-infra-red-spectroscopy-using-salt-plates_01_usability_smk.org][Instrumentation-and-working-principles-of-infra-red-spectroscopy-using-salt-plates_01_usability_smk.org]]
+
+* Post conditions
+  - Nil
+* Test Steps
+  1. Click on the "Click Here" link 
+  2. Check the functionality of the UI buttons.
+
+* Expected result
+  1. Experiment page should be displayed on the screen
+  2. Sample Buttons - On click to select one of the sample to perform
+     the experiment the buttons should be disappear.
+  3. Sample Jar -  On click the sample should be collected with a
+     spoon and poured in the Mortar.    
+  4. Mortar - On click the Mortar, sample should be mixed with the
+     provided spoon.
+  5. Nizol - On click the Nizol Jar, a pippette should collect the
+     solution and pour into the Mortar.
+  6. Animation for IR plates should be activated once the sample
+     solution is prepared. 
+  7. Start Button - On click the Start button, animation should be
+     activated for the graph and for the experiment.
+  8. Evaluate button - On click should be navigated to a page with a graph and a
+     questionnaire.
+  
+
+* Review/comments

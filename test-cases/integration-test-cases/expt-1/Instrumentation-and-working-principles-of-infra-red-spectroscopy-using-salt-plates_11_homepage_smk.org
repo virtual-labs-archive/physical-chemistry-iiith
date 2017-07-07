@@ -1,0 +1,36 @@
+#+Title: Test case
+#+Date: 06 July 2017
+#+Author: SravanthiB
+
+* Environment
+
+  +  OS: Windows 7, Linux
+  +  Browsers: Firefox,Chrome
+  +  Bandwidth : 100Mbps
+  +  Hardware Configuration:8GBRAM,
+  +  Processor:i5
+
+* Objective
+
+   + To be able to simulate the "Instrumentation and working principles of infra red spectroscopy using salt plates" experiment
+     
+* Pre conditions
+
+  +  Refer to first test case [[https://github.com/Virtual-Labs/physical-chemistry-iiith/blob/master/test-cases/integration-test-cases/expt-1/Instrumentation-and-working-principles-of-infra-red-spectroscopy-using-salt-plates_01_usability_smk.org][Instrumentation-and-working-principles-of-infra-red-spectroscopy-using-salt-plates_01_usability_smk.org]]
+
+* Post conditions
+
+  +  Nil
+     
+* Test Steps
+
+  +  Click on the "Instrumentation and working principles of infra red spectroscopy using salt plates" link.
+  +  Check if there are any distortions, spelling mistakes and junk
+     characters in the Simulation page.
+
+* Expected result
+
+  + The home page of "Instrumentation and working principles of infra red spectroscopy using salt plates" experiment should be displayed on the screen.
+  + The Home page should be present with no distortions, spelling mistakes and Junk characters.
+
+* Review/comments
