@@ -144,6 +144,7 @@ function checkAnswer1(value,t)
 	}
 	if(t1==11)
 	{
+		$(".q"+10).hide();
 		$(".success").hide();
 		$(".failure").hide();
 		$(".sub").show();
@@ -233,7 +234,7 @@ function checkAnswer1(value,t)
 </br></input></br></input></br></input></br></input></br></p></form>
 <br><br>
 <form class="ans" method="post" action="results.html" target="_blank"> 
-	<input type="submit" class="sub" value="Show Answers" onclick="checkAnswer1(this.value,9)">
+	<input type="submit" class="sub" value="Show Answers" onclick="checkAnswer1(this.value,10)">
 </form>
 <!--
 <h2>Solutions</h2><br><p>
