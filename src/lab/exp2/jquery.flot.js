@@ -186,44 +186,57 @@
 
         function executeHooks(hook, args) {
             args = [plot].concat(args);
-            for (var i = 0; i < hook.length; ++i)
+            for (var i = 0; i < hook.length; ++i){
                 hook[i].apply(this, args);
+            }
         }
 
         function initPlugins() {
             for (var i = 0; i < plugins.length; ++i) {
                 var p = plugins[i];
                 p.init(plot);
-                if (p.options)
+                if (p.options){
                     $.extend(true, options, p.options);
+                }
             }
         }
         
         function parseOptions(opts) {
             $.extend(true, options, opts);
-            if (options.grid.borderColor == null)
+            if (options.grid.borderColor == null){
                 options.grid.borderColor = options.grid.color;
+            }
             // backwards compatibility, to be removed in future
-            if (options.xaxis.noTicks && options.xaxis.ticks == null)
+            if (options.xaxis.noTicks && options.xaxis.ticks == null){
                 options.xaxis.ticks = options.xaxis.noTicks;
-            if (options.yaxis.noTicks && options.yaxis.ticks == null)
+            }
+            if (options.yaxis.noTicks && options.yaxis.ticks == null){
                 options.yaxis.ticks = options.yaxis.noTicks;
-            if (options.grid.coloredAreas)
+            }
+            if (options.grid.coloredAreas){
                 options.grid.markings = options.grid.coloredAreas;
-            if (options.grid.coloredAreasColor)
+            }
+            if (options.grid.coloredAreasColor){
                 options.grid.markingsColor = options.grid.coloredAreasColor;
-            if (options.lines)
+            }
+            if (options.lines){
                 $.extend(true, options.series.lines, options.lines);
-            if (options.points)
+            }
+            if (options.points){
                 $.extend(true, options.series.points, options.points);
-            if (options.bars)
+            }
+            if (options.bars){
                 $.extend(true, options.series.bars, options.bars);
-            if (options.shadowSize)
+            }
+            if (options.shadowSize){
                 options.series.shadowSize = options.shadowSize;
+            }
 
-            for (var n in hooks)
-                if (options.hooks[n] && options.hooks[n].length)
+            for (var n in hooks){
+                if (options.hooks[n] && options.hooks[n].length){
                     hooks[n] = hooks[n].concat(options.hooks[n]);
+                }
+            }
 
             executeHooks(hooks.processOptions, [options]);
         }
