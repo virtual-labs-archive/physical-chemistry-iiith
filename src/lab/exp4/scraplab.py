@@ -5,7 +5,6 @@ def writefile(fname,s,s1,heading):
 	f=open(fname, 'w+')
 	f.write(template)
 	f.seek(0)
-	
 	content = f.read()
 	content=content.replace('Disciplines and Domains',breadcrumb)
 	f.seek(0)
@@ -60,8 +59,7 @@ while sectionNumber<=len(sectionno):
 	tagger = soup.findAll('div', attrs={'id':att,'class':'heading'})
 	if not tagger:
 		sectionNumber=sectionNumber+1
-		continue
-	tag1=str(tagger[0].text)
+		continue tag1=str(tagger[0].text)
 	tag1=tag1.strip()
 	print tag1
 	if tag1=='Prerequisite S/W':
@@ -81,8 +79,7 @@ while sectionNumber<=len(sectionno):
 	tag1=str(tagger[0].text)	
 	tag1=tag1.strip()
 	if tag1=='Prerequisite S/W':
-		tag1='Prerequisites'
-	att = ''+'experiment-article-section-'+str(sectionNumber)+'-content'
+		tag1='Prerequisites'att = ''+'experiment-article-section-'+str(sectionNumber)+'-content'
 	tagger = soup.findAll('div', attrs={'id':att,'class':'content'})
 	
 	tag+=str(tagger[0])
