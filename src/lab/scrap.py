@@ -34,7 +34,8 @@ def writefile(fname,s,s1,heading):
 	content=f.read()
 	#print content
 	filedata=content.replace('index.php','Introduction.html?domain= Chemical Sciences&lab='+heading)
-	f.seek(0) f.write(filedata)	
+	f.seek(0) 
+f.write(filedata)	
 f=open("template.html",'r')
 template=f.read()
 f=open("content.html",'r')
@@ -79,7 +80,7 @@ while sectionNumber<=len(sectionno):
 	tag1=tag1.strip()
 	if tag1=='Prerequisite S/W':
 		tag1='Prerequisites'
-	att ='lab-article-section-'+str(sectionNumber)+'-content'
+                att ='lab-article-section-'+str(sectionNumber)+'-content'
 	tagger = soup.findAll('div', attrs={'id':att,'class':'content'})
 	
 	tag+=str(tagger[0])
