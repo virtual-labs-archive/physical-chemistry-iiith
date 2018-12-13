@@ -78,11 +78,11 @@ while sectionNumber<=len(sectionno):
 		sectionNumber=sectionNumber+1
 		continue 
 tag1 = str(tagger[0].text)	
-	tag1=tag1.strip()
+tag1 = tag1.strip()
 if tag1 == 'Prerequisite S/W':
 tag1 = 'Prerequisites'
 att = ''+'experiment-article-section-'+str(sectionNumber)+'-content'
-	tagger = soup.findAll('div', attrs={'id':att,'class':'content'})
+tagger = soup.findAll('div', attrs={'id': att, 'class': 'content'})
 	
 	tag+=str(tagger[0])
 	#print tag

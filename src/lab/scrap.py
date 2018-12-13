@@ -83,7 +83,7 @@ tag1 = tag1.strip()
 if tag1 == 'Prerequisite S/W':
     tag1 = 'Prerequisites'
 att ='lab-article-section-'+str(sectionNumber)+'-content'
-	tagger = soup.findAll('div', attrs={'id':att,'class':'content'})
+tagger = soup.findAll('div', attrs={'id': att, 'class': 'content'})
 	
 	tag+=str(tagger[0])
 	tag=tag.replace('<div class="content" id="'+att+'">','<div>')
