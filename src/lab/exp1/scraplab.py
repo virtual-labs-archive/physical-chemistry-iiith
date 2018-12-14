@@ -82,11 +82,10 @@ tag1 = tag1.strip()
 if tag1 == 'Prerequisite S/W':
     tag1 = 'Prerequisites'
 att = ''+'experiment-article-section-'+str(sectionNumber)+'-content'
-	tagger = soup.findAll('div', attrs={'id':att,'class':'content'})
-	
-	tag+=str(tagger[0])
-	#print tag
-	#print st
+tagger = soup.findAll('div', attrs={'id': att, 'class': 'content'})
+tag += str(tagger[0])
+#print tag
+#print st
 	
 	
 	writefile(tag1+'.html',tag,st,heading)

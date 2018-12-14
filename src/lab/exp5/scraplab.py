@@ -49,7 +49,7 @@ heading=heading.strip()
 print heading
 att = ''+'experiment-header-heading'
 tagger = soup.findAll('div', attrs={'id':att,'class':'heading'})
-heading1=str(tagger[0].text)
+heading1 = str(tagger[0].text)
 print heading
 heading1=heading1.strip()
 breadcrumb='<a href="http://vlabs.ac.in/chemical-sciences-labs.html" class="sidebar-a" >Chemical Sciences</a> &rarr;<a href="../Introduction.html" class="sidebar-a" >'+heading1+'</a>&nbsp&rarr;<a href="../Experiments.html" class="sidebar-a" >List Of Experiments</a><br/>'
@@ -80,13 +80,12 @@ while sectionNumber<=len(sectionno):
 tag1 = str(tagger[0].text)	
 tag1 = tag1.strip()
 if tag1 == 'Prerequisite S/W':
-tag1 = 'Prerequisites'
+    tag1 = 'Prerequisites'
 att = ''+'experiment-article-section-'+str(sectionNumber)+'-content'
 tagger = soup.findAll('div', attrs={'id': att, 'class': 'content'})
-	
-	tag+=str(tagger[0])
-	#print tag
-	#print st
+tag += str(tagger[0])
+#print tag
+#print st
 	
 	
 	writefile(tag1+'.html',tag,st,heading)
