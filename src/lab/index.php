@@ -41,7 +41,7 @@ $html = file_get_html('./content.html');
         $data['nav'] = $nav;
         //print_r($nav);
 
-$vlab_url = "http://virtual-labs.ac.in/"; 
+$vlab_url = "http://vlabs.ac.in//"; 
 $css_js   = "./"; 
 $lab_url  = "index.php";
 $exp_url  =  "exp/index.php";

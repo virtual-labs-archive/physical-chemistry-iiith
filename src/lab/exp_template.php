@@ -70,7 +70,7 @@
 	<!-- Enclose the logo image of your lab or write it in 
 	text-->
 	<a href="<?php echo $vlab_url?>"><div class="imagemap">
-		<img src="http://virtual-labs.ac.in/images/virtualLabsLogo.jpg" alt="" usemap="#logos" />
+		<img src="http://vlabs.ac.in//images/virtualLabsLogo.jpg" alt="" usemap="#logos" />
 
 	
 		<map name="logos">
@@ -200,7 +200,7 @@
   footer-->
    <footer id="lab-footer" class="footer">
     <!-- Put the content here-->
-	<a href="http://virtual-labs.ac.in/nmeict/">Sponsered by MHRD (NME-ICT) </a> | <a href="http://virtual-labs.ac.in/licensing/" target="_blank"> Licensing Terms </a> | <a href="http://virtual-labs.ac.in/feedback/?lab=ccnsb04/" target="_blank"> Feedback </a>
+	<a href="http://vlabs.ac.in//nmeict/">Sponsered by MHRD (NME-ICT) </a> | <a href="http://vlabs.ac.in//licensing/" target="_blank"> Licensing Terms </a> | <a href="http://vlabs.ac.in//feedback/?lab=ccnsb04/" target="_blank"> Feedback </a>
   </footer>
 	
   	
