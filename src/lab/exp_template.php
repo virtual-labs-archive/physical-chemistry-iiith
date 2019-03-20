@@ -200,7 +200,7 @@
   footer-->
    <footer id="lab-footer" class="footer">
     <!-- Put the content here-->
-	<a href="http://virtual-labs.ac.in/nmeict/">Sponsered by MHRD (NME-ICT) </a> | <a href="http://virtual-labs.ac.in/licensing/" target="_blank"> Licensing Terms </a> | <a href="http://virtual-labs.ac.in/feedback/?lab=ccnsb04/" target="_blank"> Feedback </a>
+	<a href="https://mhrd.gov.in/technology-enabled-learning-0">Sponsered by MHRD (NME-ICT) </a> | <a href="http://www.nmeict.ac.in/officeDocumentUploaded/20-5-2014/PRSG_2012-09-19_Minutes_of_the_Virtual_Labs.pdf" target="_blank"> Licensing Terms </a> | <a href="http://virtual-labs.ac.in/feedback/?lab=ccnsb04/" target="_blank"> Feedback </a>
   </footer>
 	
   	
