@@ -1,0 +1,611 @@
+<!-- This file needs to be edited by the lab developer to suit
+the requirements of their lab in particular.-->
+
+<!-- Add class="default" to include any element as it is
+specified in default.html. 
+Do not include class="default" to the elements that you want to
+edit -->
+
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+<div id="experiment"> <!-- The Experiment Document Container-->
+
+  <!-- The lab Header contains the logo and the name of the lab,
+  usually displayed on the top of the page-->
+
+  <header id="experiment-header" class="default">
+  
+    <div id="experiment-header-logo" class="logo">
+      <!-- Enclose the logo image of your lab or write it in 
+      text-->
+      <img src="../images/logo.jpg" />
+    </div>
+
+    <div id="experiment-header-heading" class="heading">
+      <!-- Write the name of your lab and link it to the home 
+      page of your lab (h1 tag is preferred while writing your 
+      lab name)-->
+      <a href="../index.html">Physical Chemistry Lab</a>	
+    </div>
+
+    <!-- Add any additional element you want to add to the lab 
+    header, For example : Help (Enclosing them with suitable 
+    div is recommended)-->
+
+  </header>
+
+
+  <!-- The lab article is the main content area where all the 
+  experiment content sits-->
+  <article id="experiment-article">
+  
+    <!-- The lab article has an header, optional navigational 
+    menu, number of sections, an optional sidebar and a closing 
+    footer-->
+     <div id="experiment-article-breadcrumb" class="breadcrumb">
+     </div>
+    
+      <header id="experiment-article-heading" class="heading">
+        <!-- You can add a welcome message or title of the 
+        experiment here -->
+Instrumentation and Working Principles of Infra Red (IR) Spectroscopy Using Salt Plates.
+        <!-- Add any additional element if required with proper 
+        enclosing-->
+      </header>
+
+      <!-- Navigation menu is useful to organize the view of 
+      multiple sections inside the article-->
+      <nav id="experiment-article-navigation" class="default">
+        <ul id="experiment-article-navigation-menu">
+          <!-- The menu can be dynamically generated to contain 
+          the headings of your sections or instead write the 
+          menu items of your choice individually enclosedu in 
+          <li> tag as shown below-->
+        </ul>
+      </nav>
+
+      <!-- All the sections of your lab or experiment can be 
+      enclosed together with a div element as shown below-->
+      <div id="experiment-article-sections">
+
+        <!-- First section of the article-->
+        <section id="experiment-article-section-1">
+          
+          <div id="experiment-article-section-1-icon" 
+          class="icon">
+	    <!-- Enclose the icon image of your lab -->
+	    <img src="../images/introduction.jpg" />
+	  </div>	
+          
+          <!-- The heading for the section can be enclosed in a 
+          div tag. -->
+          <div id="experiment-article-section-1-heading" 
+          class="heading">
+            Introduction
+          </div>
+
+          <!-- Write the section content inside a paragraph 
+          element, You can also include images with <img> tag -->
+          <div id="experiment-article-section-1-content" 
+          class="content">	
+            <p>
+<!--Infrared spectroscopy or IR spectroscopy is the technique that involves the infrared region of the electromagnetic spectrum, between the visible and microwave regions and works mostly based on absorption spectroscopy. As with all the spectroscopic techniques, IR spectroscopy is used in the identification and study of molecules and substances. One of the common laboratory instruments that use this technique is a Fourier transform infrared (FTIR) spectrometer. 
+The infrared portion of the electromagnetic spectrum is usually divided into three regions; the near or higher energy IR (14000–4000 cm−1), mid IR (4000–400 cm−1 ) and far or low energy  infrared (400–10 cm−1). The mid-infrared is used to study the fundamental vibrations and associated rotational-vibrational structure of a molecule or substance.-->
+Infrared region lies  between the visible and microwave regions of the electromagnetic spectrum and works mostly based on absorption spectroscopy. The infrared portion of the electromagnetic spectrum is usually divided into three regions; the near or higher energy IR,  mid IR  and far or low energy infrared. The mid-infrared which is (4000 - 400 cm<sup>-1</sup> ) gives the fundamental vibrations and associated rotational-vibrational structure of the substance under study. Infrared spectroscopy is an absorption of infrared radiation by the molecules and is used to elucidate the structure of the molecule by identifying their functional groups.  One of the common laboratory instruments that use this technique is a Fourier transform infrared (FTIR) spectrometer.
+
+<center> <img src="./images/figure1_exp6.gif" style="width:505px; height:312px;" /> </center></p><p>
+Figure 1: Energy levels of molecules.<br>
+Picture source: <a href="http://www.wag.caltech.edu/home/jang/genchem/infrared.htm">http://www.wag.caltech.edu/home/jang/genchem/infrared.htm</a><br>
+</p>
+        </div>
+
+
+      </section>
+
+      <!-- Second section of the article-->
+      <section id="experiment-article-section-2">
+        
+        <div id="experiment-article-section-2-icon" 
+        class="icon">
+	  <!-- Enclose the icon image of your lab. -->
+	  <img src="../images/theory.jpg" />
+	</div>
+				
+        <!-- The heading for the section can be enclosed in a 
+        div tag. -->
+        <div id="experiment-article-section-2-heading" 
+        class="heading">
+          Theory
+        </div>
+
+
+        <!-- Write the section content inside a paragraph 
+        element, we can also include images with <img> tag -->
+        <div id="experiment-article-section-2-content" 
+        class="content">
+          <p>	
+When two atoms combine to form a stable covalent moleculer,  there are two repulsion forces acting between the two hetero atoms. One between the  positively charged nuclei of both the  atoms and the other between the negative electron clouds. The other force is the attraction between the nucleus of one atom with the electons of the other atom. Balancing the forces between them, the two atoms settle at a mean internuclear distance or the bond length where the total energy of the system is minimum.    Any change like pulling the atoms away or squeezing them brings change in the bond length which requires an input of energy.<br><br>
+A diatomic molecule with the above description is considered as two vibrating masses that are connected by a spring. The internuclear distance between the atoms at energy minimum is referred to as the equilibrium distance (r<sub>e</sub>)Any change in this distance is given by Hooke' law as:<br><br>
+
+<center> f = -k(r-r<sub>e</sub>)</center></p><p><br>
+
+where f  is the restoring force and r is the bond length. The energy associated cinsidering the energy curve to be parobolic is given as :<br>
+
+<center> E= 1/2k(r-r<sub>e</sub>)<sup>2</sup> </center></p><p><br>
+<center> <img src="./images/figure2_exp6.png" style="width:320px; height:295px;" /> </center></p><p>
+
+Figure 2: Vibrational energy levels and allowed transitions between them for a diatomic molecule in a simple harmonic motion.<br>
+Picture source:<br> <a href="http://condensedconcepts.blogspot.in/2011/10/concrete-test-of-morse-potential-in.htm">http://condensedconcepts.blogspot.in/2011/10/concrete-test-of-morse-potential-in.htm</a><br><br>
+
+For any haormonic oscillator, when the bond vibrates, its enrgy of vibration is changing continually and periodically from kinetic to potential enrgy and back again. The total energy is proportional to the frequency of vibration, and is given as:<br><br>
+                           <center> E<sub>osc</sub> = h&nu;<sub>osc</sub><br></center></p><p>
+
+The elastic nature of the bond has an intrinsic vibrational frequency which is determined by the force constant K of the spring or its stiffness, the masses of the bonded atoms.<br>
+
+<center> <img src="./images/equation1.png" style="width:103px; height:51px;" /> </center></p><p>
+
+where c is the speed of light, and &mu; is the  reduced mass of the system which is given by:<br><br>
+                           <center> &mu; = m<sub>1</sub>m<sub>2</sub>/m<sub>1</sub> + m<sub>2</sub></center></p><p><br>
+The value of the force constant varies from bond to bond. K for a triple bond is three times those of a single bond and for a double bond it is twice those of a single bond. There are two significant features that can be drawn:<br><br>
+1.      Strong bonds have large force constants and vibrate at a higher frequency than the weaker bonds.<br>
+2.      Bonds between the heavy atoms (larger reduced mass) vibrate at a lower frequency than that of bonds between the lighter atoms.<br>
+<center> <img src="./images/figure3_exp6.png" style="width:548px; height:456px;" /> </center></p><p>
+Figure 3: Vibrational modes of an organic molecule.The energy of molecular vibration is quantised. A molecule can only stretch and bend at certain allowed frequencies.<br>
+Picture source:<br> <a href="http://chemwiki.ucdavis.edu/Organic_Chemistry/Organic_Chemistry_With_a_Biological_Emphasis/Chapter__4%3A_Structure_Determination_I/Section_4.2%3A__Infrared_spectroscopy">http://chemwiki.ucdavis.edu/Organic_Chemistry/Organic_Chemistry_With_a_Biological_Emphasis/Chapter__4%3A_Structure_Determination_I/Section_4.2%3A__Infrared_spectroscopy</a><br>
+
+<b>Sample preparation for Infrared spectroscopy:</b><br>
+The sample to be measured must be taken in a sample holder or cell which is made of ionic substance. Sodium chloride or potassium bromide plates are used. Potassium bromide plates are more expensive than sodium chloride but has an advantage over the sodium chloride because of the asbsorbs at 650cm-1. Glass or platics absorb strongly through the infrared region.<br><br>
+
+<b>Liquids:</b> A drop of the liquid sample is placed between a pair of polished IR salt plates. The plates are pressed together  and the sample forms a thin film between the salt plates. A spectrum obtained by this method is neat for there is no use of solvent in the sample preparation.<br><br>
+
+<b>Solids:</b> One of the methods used to prepare sample is the Bbr Pellet method. Where the sample is powdered along with KBr and pressed under high pressure to form a pellet.<br><br>
+The other method is the Nujol method where the sample is ground along with few drops of mineral oil or nujol and the thick suspension is place between the salt plates.<br>
+<center> <img src="./images/figure4_exp6.jpg" style="width:380px; height:307px;" /> </center></p><p>
+Figure 4: IR salt plates (Sodium Chloride)<br>
+Picture source: <a href="http://www.sciencephoto.com/media/222708/view">http://www.sciencephoto.com/media/222708/view</a><br><br>
+
+<b>The Infrared Spectrometer:</b><br>
+The infrared spectrometer or the spectrophotometer is the instrument that determines the IR absorption spectra of a compound. There are two types of spectrometers that are widely used in laboratories.<br>
+a. Dispersive infrared spectrometers<br>
+b. Fourier-Transform spectrometers<br>
+<center> <img src="./images/figure5_exp6.jpg" style="width:479px; height:261px;" /> </center></p><p>
+
+
+Figure4: The main components of a fourier transform infrared (FTIR) spectrophotometer.<br>
+Picture source: <a href="http://cnx.org/content/m34660/latest/?collection=col10699/latest">http://cnx.org/content/m34660/latest/?collection=col10699/latest</a><br><br>
+
+FT-IR spectrometers are the modern spectometers that provide the spectrum more rapidly than the dispersive ones. The optical pathway produces a  pattern called the interferogram. This is a complex signal which is a plot of intensity versus time. For more practical purposes this time-domine spectrum is converted to a frequency-domain spectrum, that is intensity versus frequency. This conversion is done by a mathematical operation called a Fourier-Transform (FT). FT separates the individual frequencies from the interferogram producing a virtual spectrum identical to the one abtained form dispersive spectrometers.  The biggest advantage of using a FT-IR spectometers is that it is possible to collect number of interferograms of the same sample in less than a second. When a fourier-Transform is performed a sum of all the interferograms gives spectrum which has a better signal to noise ratio. Greater speed and greater sensitivity makes FT-IR spectrometers preferred over dispersive spectometers.
+
+
+<!--the organic molecules absorb the Infrared radiation and convert them into energy of  molecular vibration. Compounds with different functional groups absorb infrared radiation at different wavelengths. A molecule can vibrate in many ways, and each way is called a vibrational mode. For molecules with N atoms in them, linear molecules have 3N – 5 degrees of vibrational modes, whereas nonlinear molecules have 3N – 6 degrees of vibrational modes (also called vibrational degrees of freedom). As an example H2O, a non-linear molecule, will have 3 × 3 – 6 = 3 degrees of vibrational freedom, or modes. The atoms in a CH2 group, commonly found in organic compounds, can vibrate in six different ways: symmetric and antisymmetric stretching, scissoring, rocking, wagging and twisting. An IR spectrum is a plot of wavenumber (X-axis) vs percent transmittance (Y-axis)<br><br> 
+A classical IR spectro meter involves absorption of samples are scanned, whereas  a , Fourier-Transform Infrared (FTIR) spectroscopy is an interferometric method. An FTIR spectrometer consist of an infrared source, an interferometer, the sample, and the infrared detector. The interferometer is the heart of the spectrometer and consists in its simplest form of a beam splitter, a fixed mirror, and a moving mirror scanning back and forth. Therefore, the spectrum is not directly measured but its interferogram, i.e. the IR intensity reaching the detector as a function of the mirror position. The spectrum is subsequently obtained by Fourier transformation of the interferogram from the time domain into the frequency domain.<br><br>  
+The major advantages of FTIR spectroscopy, as compared to conventional dispersive IR spectroscopy, are the so-called multiplexing advantage (Felgett advantage) and the high energy flux reaching the detector (Jacquinot advantage), allowing rapid spectrum acquisition at a high signal to noise ratio.<br>
+<center><table>
+<tr>
+<td><img src="./images/image3.png" /></center></p><p></td><td><img src="./images/image4.png" /></td></tr></table></center></p><p><br><br> -->
+
+</p>
+
+        </div>
+      </section>
+
+
+      <section id="experiment-article-section-3">
+        
+        <div id="experiment-article-section-3-icon" 
+        class="icon">
+	  <!-- Enclose the icon image of your lab. -->
+	  <img src="../images/objective.jpg" />
+	</div>
+     
+        <div id="experiment-article-section-3-heading" 
+        class="heading">
+          Objective
+        </div>
+
+        <div id="experiment-article-section-3-content" 
+        class="content">
+          <p>
+(i) To learn sample prepartion and handling procedures to measure an IR spectrum using salt plates. <br>
+(ii) Spectral analysis of the sample measured.<br>
+
+
+	</p> 
+       
+       
+        </div>
+
+      </section>
+
+
+      <section id="experiment-article-section-4">
+
+        <div id="experiment-article-section-4-icon" 
+        class="icon">
+	  <!-- Enclose the icon image of your lab.-->
+	  <img src="../images/simulation.jpg" />
+	</div>
+
+        <div id="experiment-article-section-4-heading" 
+        class="heading">
+          Experiment
+        </div>
+
+        <div id="experiment-article-section-4-content" 
+        class="content">
+          <p>
+	<a href="../exp6_10/IR_Powder_exp6.swf">Click here</a>
+          </p>
+        </div>
+
+      </section>
+
+      <section id="experiment-article-section-5">
+   
+        <div id="experiment-article-section-5-icon" 
+        class="icon">
+	  <!-- Enclose the icon image of your lab.-->
+	  <img src="../images/manual.jpg" />
+	</div>
+
+        <div id="experiment-article-section-5-heading" 
+        class="heading">
+          Manual
+        </div>
+
+        <div id="experiment-article-section-5-content" 
+        class="content">
+          <p>
+
+Follow the procedure given below:<br><br>
+1. Click on the sample bottle (the first bottle) to transfer a small quantity of the sample to the mortar.<br>
+2. Click on the mortar to grind the sample to fine paste<br>
+3. Click on the bottle containing Nujol to transfer few drops to the mortar.<br>
+4. Click on the mortar to make a fine paste of sample<br>
+5. Transfer the sample prepared onto one of the IR discs<br>
+6. Place carefully the other disc  and press to form a thin film.<br>
+7. Move the IR plates to the plate holder<br>
+8. Place the other part of the holder to sandwich the IR discs.<br>
+9. Click on the holder to place the the sample in the spectrometer.<br>
+10. Click start to run the spectrometer. 	</p>
+        
+          </div>
+
+        </section>
+
+        <section id="experiment-article-section-6">
+      
+          <div id="experiment-article-section-6-icon" 
+          class="icon">
+	    <!-- Enclose the icon image of your lab.-->
+	    <img src="../images/quizzes.jpg" />
+	  </div>
+
+          <div id="experiment-article-section-6-heading" 
+          class="heading">
+            Quizzes
+          </div>
+
+          <div id="experiment-article-section-6-content" 
+          class="content">
+            
+            <p>
+              
+             <div class="success"><h2 style="color:green;text-align:center">right answer!</h2></div>
+<div class="failure"><h2 style="color:red;text-align:center">oops, wrong answer!</h2></div> 
+</p>
+ <script type="text/javascript" src="../js/jquery-1.4.2.min.js"></script>
+
+ <script type="text/javascript" src="../js/modernizr-1.5.min.js">
+  </script>
+  <script type="text/javascript">
+          $(document).ready(function(){
+
+			          $(".q2").hide();
+				  $(".q3").hide();
+				  $(".q4").hide();
+				  $(".q5").hide();
+				  $(".q6").hide();
+				  $(".q7").hide();
+				  $(".q8").hide();
+				  $(".q9").hide();
+				  $(".q10").hide();
+				  $(".success").hide();
+				  $(".failure").hide();
+				  });
+var count=0;
+function checkAnswer1(value,t)
+{
+	var t1=t+1;
+	if(value==10){
+		$(".failure").hide();
+		$(".success").show();
+		$(".q"+t).hide();
+		$(".success").hide(1000);
+		$(".q"+t1).show(2000);
+		count+=1;
+	}
+	else{
+		$(".success").hide();
+		$(".failure").show();
+		$(".q"+t).hide();
+		$(".failure").hide(1000);
+		$(".q"+t1).show(2000);
+	}
+	if(t1==11)
+	{
+		$(".success").hide();
+		$(".failure").hide();
+		setTimeout("alert('You secured '+ count +' out of 10')",2000);
+	}
+}
+</script>
+
+
+<form name="q1" class="q1">
+
+<p><b>1. 1. The most commonly used and relatively less expensive cell for routine use in IR spectroscopy is:</b><br>
+ <input type="radio" name="q1" id="q1" value="10" onClick="checkAnswer1(this.value,1)">a. Sodium chloride<br>
+ <input type="radio" name="q1" id="q1" value="0" onClick="checkAnswer1(this.value,1)">b. Potassium Chloride<br>
+ <input type="radio" name="q1" id="q1" value="1" onClick="checkAnswer1(this.value,1)">c. Glass Cells<br>
+ <input type="radio" name="q1" id="q1" value="2" onClick="checkAnswer1(this.value,1)">d. Plastic Cells
+<br><br>
+</p></form>
+
+<form class="q2">
+<p><b>2. Materials made of glass are not used for IR measurement because:</b><br>
+ <input type="radio" name="q2" id="q2" value="10" onClick="checkAnswer1(this.value,2)">a. strongly absorb through out the IR region of the spectrum.<br>
+ <input type="radio" name="q2" id="q2" value="1" onClick="checkAnswer1(this.value,2)">b. do not absorb through out the IR region of the spectrum.<br>
+ <input type="radio" name="q2" id="q2" value="0" onClick="checkAnswer1(this.value,2)">c. udergo scattering.<br>
+ <input type="radio" name="q2" id="q2" value="2" onClick="checkAnswer1(this.value,2)">d. remains unaltered
+<br><br>
+</p></form>
+
+<form class="q3">
+<p><b>3. To measure the Spectrum of a compound in the range of  4000 to 400 cm<sub>-1</sub> the following plates is used: </b><br>
+ <input type="radio" name="q3" id="q3" value="0" onClick="checkAnswer1(this.value,3)">a. Glass plates<br>
+ <input type="radio" name="q3" id="q3" value="1" onClick="checkAnswer1(this.value,3)">b. Sodium chloride plates<br>
+ <input type="radio" name="q3" id="q3" value="10" onClick="checkAnswer1(this.value,3)">c. Potassium bromide plates<br>
+ <input type="radio" name="q3" id="q3" value="2" onClick="checkAnswer1(this.value,3)">d. Silica plates
+<br><br>
+</p></form>
+
+<form class="q4">
+<p><b>4. Which of the following bonds is  expected to have the highest frequency stretch?</b><br>
+ <input type="radio" name="q4" id="q4" value="0" onClick="checkAnswer1(this.value,4)">a. carbon-carbon single bond<br>
+ <input type="radio" name="q4" id="q4" value="1" onClick="checkAnswer1(this.value,4)"> b. carbon-carbon double bond<br>
+ <input type="radio" name="q4" id="q4" value="10" onClick="checkAnswer1(this.value,4)"> c. carbon-carbon triple bond<br>
+ <input type="radio" name="q4" id="q4" value="2" onClick="checkAnswer1(this.value,4)">d. carbon-bromine single bond
+<br><br>
+</p></form>
+
+<form class="q5">
+<p><b>5.  A strong signal at 3300 cm<sub>-1</sub> in an IR spectrum indicates presence of</b><br>
+ <input type="radio" name="q5" id="q5" value="10" onClick="checkAnswer1(this.value,5)">a. alcohol<br>
+ <input type="radio" name="q5" id="q5" value="1" onClick="checkAnswer1(this.value,5)">b. ether<br>
+ <input type="radio" name="q5" id="q5" value="0" onClick="checkAnswer1(this.value,5)">c. carbonyl<br>
+ <input type="radio" name="q5" id="q5" value="2" onClick="checkAnswer1(this.value,5)">d. amine
+<br><br>
+</p></form>
+
+<form class="q6">
+<p><b>6. The carbonyl (C=O)  stretching frequency appears at:</b><br>
+ <input type="radio" name="q6" id="q6" value="1" onClick="checkAnswer1(this.value,6)"> a. 740 - 720<br>
+ <input type="radio" name="q6" id="q6" value="10" onClick="checkAnswer1(this.value,6)"> b. 1870 - 1650<br>
+ <input type="radio" name="q6" id="q6" value="0" onClick="checkAnswer1(this.value,6)"> c. 3640 - 3250<br>
+ <input type="radio" name="q6" id="q6" value="2" onClick="checkAnswer1(this.value,6)">d. 1160 - 1030
+<br><br>
+</p></form>
+
+<form class="q7">
+<p><b>7. Where in an IR spectrum does a carbon-carbon triple bond show a stretching vibration</b><br>
+ <input type="radio" name="q7" id="q7" value="1" onClick="checkAnswer1(this.value,7)">a. 2700 cm<sup>-1</sup><br>
+ <input type="radio" name="q7" id="q7" value="0" onClick="checkAnswer1(this.value,7)">b. 3100 cm<sup>-1</sup><br>
+ <input type="radio" name="q7" id="q7" value="10" onClick="checkAnswer1(this.value,7)">c. 2100 cm<sup>-1</sup><br>
+ <input type="radio" name="q7" id="q7" value="2" onClick="checkAnswer1(this.value,7)">d. 3300 cm<sup>-1</sup>
+<br><br>
+</p></form>
+
+<form class="q8">
+<p><b>8. Infrared spectroscopy provides valuable information about</b><br>
+ <input type="radio" name="q8" id="q8" value="1" onClick="checkAnswer1(this.value,8)"> a. molecular weight<br>
+ <input type="radio" name="q8" id="q8" value="2" onClick="checkAnswer1(this.value,8)">b. Physical properties<br>
+ <input type="radio" name="q8" id="q8" value="0" onClick="checkAnswer1(this.value,8)">c. chemical properties<br>
+ <input type="radio" name="q8" id="q8" value="10" onClick="checkAnswer1(this.value,8)">d. functional groups.
+<br><br>
+</p></form>
+
+<form class="q9">
+<p><b>9.  What determines the intensity of an IR peak  absorption in an IR spectrum?</b><br>
+ <input type="radio" name="q9" id="q9" value="0" onClick="checkAnswer1(this.value,9)">a. the change in polarizability during vibration<br>
+ <input type="radio" name="q9" id="q9" value="1" onClick="checkAnswer1(this.value,9)"> b. the change in bond length during vibration<br>
+ <input type="radio" name="q9" id="q9" value="10" onClick="checkAnswer1(this.value,9)">c. the change in dipole moment during vibration<br>
+ <input type="radio" name="q9" id="q9" value="2" onClick="checkAnswer1(this.value,9)">d. the molecular weight of the bonding atoms
+<br><br>
+</p></form>
+
+<form class="q10">
+<p><b>10. The most effect method of IR spectroscopy is the:</b><br>
+ <input type="radio" name="q10" id="q10" value="0" onClick="checkAnswer1(this.value,10)"> a. Dispersion spectrometers<br>
+ <input type="radio" name="q10" id="q10" value="1" onClick="checkAnswer1(this.value,10)"> b. Reflection spectrometers<br>
+ <input type="radio" name="q10" id="q10" value="10" onClick="checkAnswer1(this.value,10)">c. Fourier-Transform spectrometers<br>
+ <input type="radio" name="q10" id="q10" value="2" onClick="checkAnswer1(this.value,10)"> d. Deflection spectrometers<br>
+</p></form>
+            </p>
+
+          </div>
+
+        </section>
+			
+		
+        <section id="experiment-article-section-8">
+   
+          <div id="experiment-article-section-8-icon" 
+          class="icon">
+	    <!-- Enclose the icon image of your lab.-->
+	    <img src="../images/readings.jpg" />
+	  </div>
+
+          <div id="experiment-article-section-8-heading" 
+          class="heading">
+            Further Readings
+          </div>
+
+          <div id="experiment-article-section-8-content" 
+          class="content">
+           <h2> Book References:</h2><br><p>
+1. Paula, Peter Atkins, Julio de (2009). Elements of physical chemistry (5th ed. ed.). Oxford: Oxford U.P<br>
+2. Brian C Smith (1995). Fundamentals of Fourier Transform Infrared Spectroscopy, Donald L. Pavia Gary M. Lampman, George S. Kriz James A. Vyvyan (2008) Introduction to Spectroscopy. Brooks/Cole  <br>
+3. Colin N. Banwell,  Elaine M. McCash (1994). Fundamentals of Molecular Spectroscopy. Mcgraw hill.<br><br>
+</p>
+
+<h2> Other references: </h2><p>
+
+1. <a href="http://orgchem.colorado.edu/hndbksupport/specttutor/irchart.html">http://orgchem.colorado.edu/hndbksupport/specttutor/irchart.html</a><br>
+2. <a href="http://chem-ilp.net/labTechniques/IRVideo.htm">http://chem-ilp.net/labTechniques/IRVideo.htm</a><br>
+3 <a href="http://www.umass.edu/microbio/chime/ir-spect/#">http://www.umass.edu/microbio/chime/ir-spect/#</a><br>
+4. <a href="http://www.chem.umass.edu/~nermmw/Spectra/irspectra/Methanol/methanol.html#">http://www.chem.umass.edu/~nermmw/Spectra/irspectra/Methanol/methanol.html#</a><br>
+5. <a href="http://www2.chemistry.msu.edu/faculty/reusch/VirtTxtJml/Spectrpy/InfraRed/problems/irmsprb.htm">http://www2.chemistry.msu.edu/faculty/reusch/VirtTxtJml/Spectrpy/InfraRed/problems/irmsprb.htm</a><br>
+6. <a href="http://solidstate.physics.sunysb.edu/book/prob/node111.html">http://solidstate.physics.sunysb.edu/book/prob/node111.html</a><br>
+7. <a href="http://www3.wooster.edu/chemistry/analytical/default.html">http://www3.wooster.edu/chemistry/analytical/default.html</a><br>
+8. <a href="http://faculty.sdmiramar.edu/fgarces/LabMatters/Instruments/FTIR/FTIR.htm#Instrument">http://faculty.sdmiramar.edu/fgarces/LabMatters/Instruments/FTIR/FTIR.htm#Instrument</a><br>
+9. <a href="http://www.biophysik.uni-freiburg.de/Spectroscopy/FTIR/spectroscopy.html">http://www.biophysik.uni-freiburg.de/Spectroscopy/FTIR/spectroscopy.html</a><br>
+10. <a href="http://www.learnerstv.com/animation/animation.php?ani=56&cat=Chemistry">http://www.learnerstv.com/animation/animation.php?ani=56&cat=Chemistry</a><br>
+11. <a href="http://www.chem.purdue.edu/gchelp/vibs/#">http://www.chem.purdue.edu/gchelp/vibs/#</a><br>
+12. <a href="http://www3.wooster.edu/chemistry/analytical/ftir/default.html">http://www3.wooster.edu/chemistry/analytical/ftir/default.html</a><br>
+13. <a href="http://orgchem.colorado.edu/hndbksupport/irtutor/tutorial.html">http://orgchem.colorado.edu/hndbksupport/irtutor/tutorial.html</a><br>
+<br></p>
+	<h2> Sample preparation:</h2><p>
+<a href="http://orgchem.colorado.edu/procedures/IR/IRprepother.html">http://orgchem.colorado.edu/procedures/IR/IRprepother.html</a><br>
+<a href="http://orgchem.colorado.edu/procedures/IR/IRsolids.html">http://orgchem.colorado.edu/procedures/IR/IRsolids.html</a><br>
+<a href="http://www.niu.edu/AnalyticalLab/ftir/sample%20preparation.shtml">http://www.niu.edu/AnalyticalLab/ftir/sample%20preparation.shtml</a><br>
+ <br><br></p>
+          </div>
+
+        </section>
+        <!--   <section id="experiment-article-section-9">
+	  
+          <div id="experiment-article-section-9-icon" 
+          class="icon"> -->
+	    <!-- Enclose the icon image of your lab. -->
+<!--	    <img src="../images/experiments.jpg" />
+	  </div>
+	
+          <div id="experiment-article-section-9-heading" 
+          class="heading">
+	    Experiments
+	  </div>
+	
+          <div id="experiment-article-section-9-content" 
+          class="content">
+	    <p>
+	      <ul id="list-of-experiments">
+	  <li class="experiment-thumb"> 
+					<a href="../exp6/"> 
+						<strong>Instrumentation and working principles of infra red (IR) spectroscopy using salt plates.</strong> 
+					</a> 
+				</li> 
+	
+				<li class="experiment-thumb"> 
+					<a href="../exp7/"> 
+						<strong>Instrumentation and working principles of solutions infra red (IR) spectroscopy </strong> 
+					</a> 
+				</li> 
+ 
+				<li class="experiment-thumb"> 
+					<a href="../exp8/"> 
+						<strong>Instrumentation and working principles principles of mass spectroscopy</strong> 
+					</a> 
+				</li> 
+				<li class="experiment-thumb"> 
+					<a href="../exp9/"> 
+						<strong>Determination of molar mass of simple compounds using mass spectroscopy</strong> 
+					</a> 
+				</li> 
+				<li class="experiment-thumb"> 
+					<a href="../exp5/"> 
+						<strong>Nuclear magnetic resosnace spectrocopy and evaulation of simple 1H NMR spectra of select organic compounds</strong> 
+					</a> 
+				</li> 
+	
+ 
+ 
+				<li class="experiment-thumb"> 
+					<a href="../exp10/"> 
+						<strong>Identification of unknown components using spectroscopic techniques.</strong> 
+					</a> 
+				</li> 
+				<li class="experiment-thumb"> 
+					<a href="../exp1/"> 
+						<strong>Principles of electron paramagnetic resonance spectroscopy</strong> 
+					</a> 
+				</li> 
+				<li class="experiment-thumb"> 
+					<a href="../exp2/"> 
+						<strong>Electron paramagnetic resonance spectral studies of select organic free radicals</strong> 
+					</a> 
+				</li> 
+	  </ul>
+	    </p>
+	  </div>
+	
+        </section> -->
+        <section id="experiment-article-section-10">
+	  
+          <div id="experiment-article-section-10-icon" 
+          class="icon">
+	    <!-- Enclose the icon image of your lab. -->
+	    <img src="../images/feedback.jpg" />
+	  </div>
+	
+          <div id="experiment-article-section-10-heading" 
+          class="heading">
+	    Feedback
+	  </div>
+	
+          <div id="experiment-article-section-10-content" 
+          class="content">
+	    <p>
+	      <a href="http://virtual-labs.ac.in/feedback/" target="_blank">Feedback</a>
+
+	    </p>
+	  </div>
+	
+        </section>
+
+      </div>
+
+
+    <!-- An article can have a sidebar that contain related 
+    links and additional material (however it is kept optional 
+    at this moment) -->
+    <aside id="lab-article-sidebar" class="default">
+      <!-- put the content that you want to appear in the 
+      sidebar -->	
+    </aside>
+
+
+    <!-- Article footer can display related content and 
+    additional links -->						
+    <footer id="lab-article-footer" class="default">
+      <!-- Put the content that you want to appear here -->
+    </footer>
+
+  </article>
+
+
+  <!-- Links to other labs, about us page can be kept the lab 
+  footer-->
+  <footer id="lab-footer" class="default">
+    <!-- Put the content here-->
+  </footer>
+
+</div>		
+
+</body>
+</html>

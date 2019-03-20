@@ -1,0 +1,238 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
+<html> 
+ <head> 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+    <title>Graph Plot</title> 
+    <link href="layout.css" rel="stylesheet" type="text/css"></link> 
+    <!--[if IE]><script language="javascript" type="text/javascript" src="../excanvas.min.js"></script><![endif]--> 
+    <script language="javascript" type="text/javascript" src="jquery.js"></script> 
+    <script language="javascript" type="text/javascript" src="jquery.flot.js"></script> 
+ </head> 
+    <body> 
+ 
+   <table>
+   <tr>
+   <td>
+    <div id="placeholder" style="width:600px;height:500px"></div>  
+    </td>
+    <td>
+     <p id="hoverdata">Mouse hovers at
+     (<span id="x">0</span>, <span id="y">0</span>  ). </p> 
+    </td>
+    </tr>
+   <table>
+ <!--   <p>A tooltip is easy to build with a bit of jQuery code and the
+    data returned from the plot.</p> 
+ 
+    <p><input id="enableTooltip" type="checkbox">Enable tooltip</p> 
+ -->
+<script id="source" language="javascript" type="text/javascript"> 
+$(function () {
+    var sin = [];
+//    sin.push([i, Math.sin(i)]);
+	 sin.push([1210,691]);
+	 sin.push([1250,450]);
+	 sin.push([1290,446]);
+	 sin.push([1330,658]);
+	 sin.push([1370,618]);
+	 sin.push([1410,701]);
+	 sin.push([1450,1200]);
+	 sin.push([1490,698]);
+	 sin.push([1530,545]);
+	 sin.push([1570,1099]);
+	 sin.push([1610,348]);
+	 sin.push([1650,10000]);
+	 sin.push([1690,5090]);
+	 sin.push([1730,270]);
+	 sin.push([1770,97]);
+	 sin.push([1810,35]);
+	 sin.push([1850,22]);
+	 sin.push([1890,8]);
+	 sin.push([1930,17]);
+	 sin.push([1970,9]);
+	 sin.push([2010,17]);
+	 sin.push([2050,5]);
+	 sin.push([2090,11]);
+	 sin.push([2130,11]);
+	 sin.push([2170,16]);
+	 sin.push([2210,16]);
+	 sin.push([2250,14]);
+	 sin.push([2290,2]);
+	 sin.push([2330,0]);
+	 sin.push([2370,10]);
+	 sin.push([2410,7]);
+	 sin.push([2450,13]);
+	 sin.push([2490,16]);
+	 sin.push([2530,22]);
+	 sin.push([2570,21]);
+	 sin.push([2610,14]);
+	 sin.push([2650,16]);
+	 sin.push([2690,16]);
+	 sin.push([2730,26]);
+	 sin.push([2770,31]);
+	 sin.push([2810,62]);
+	 sin.push([2850,118]);
+	 sin.push([2890,210]);
+	 sin.push([2930,617]);
+	 sin.push([2970,132]);
+	 sin.push([3010,56]);
+	 sin.push([3050,50]);
+	 sin.push([3090,47]);
+	 sin.push([3130,18]);
+	 sin.push([3170,16]);
+	 sin.push([3210,23]);
+	 sin.push([3250,17]);
+	 sin.push([3290,21]);
+	 sin.push([3330,21]);
+	 sin.push([3370,48]);
+	 sin.push([3410,14]);
+	 sin.push([3450,18]);
+	 sin.push([3490,21]);
+var i = 0 ;
+tick=[];
+for( i = 0 ; i < 10 ; i++ )
+{
+ tick.push([ -500*i , 500*i + ''] ) ;
+}
+for(i=0;i<sin.length;i++)
+{
+ sin[i][0] = -1*sin[i][0] ;
+ sin[i][1] = 10000 - sin[i][1] ;
+}
+
+    var plot = $.plot($("#placeholder"),
+           [ { data: sin, label: "<Graph>Intensity"} ], {
+               series: {
+ 	           color: 'blue',
+                   lines: { show: true },
+                   points: { show: false }
+               },
+               grid: { hoverable: true, clickable: true },
+               yaxis: { min: -100, max:11000 },
+/*Change here*/
+xaxis: {
+		inverseTransform: function (v) { return -v; },
+		ticks: tick }
+             });
+ 
+    function showTooltip(x, y, contents) {
+        $('<div id="tooltip">' + contents + '</div>').css( {
+            position: 'absolute',
+            display: 'none',
+            top: y + 5,
+            left: x + 5,
+            border: '1px solid #fdd',
+            padding: '2px',
+            'background-color': '#fee',
+            opacity: 0.80
+        }).appendTo("body").fadeIn(200);
+    }
+ 
+    var previousPoint = null;
+    $("#placeholder").bind("plothover", function (event, pos, item) {
+        $("#x").text(pos.x.toFixed(2));
+        $("#y").text(pos.y.toFixed(2));
+ 
+        if ($("#enableTooltip:checked").length > 0) {
+            if (item) {
+                if (previousPoint != item.datapoint) {
+                    previousPoint = item.datapoint;
+                    
+                    $("#tooltip").remove();
+                    var x = item.datapoint[0].toFixed(2),
+                        y = item.datapoint[1].toFixed(2);
+                    
+                    showTooltip(item.pageX, item.pageY,
+                                item.series.label + " of " + x + " = " + y);
+                }
+            }
+            else {
+                $("#tooltip").remove();
+                previousPoint = null;            
+            }
+        }
+    });
+ 
+    $("#placeholder").bind("plotclick", function (event, pos, item) {
+        if (item) {
+            $("#clickdata").text("You clicked point " + item.dataIndex + " in " + item.series.label + ".");
+            plot.highlight(item.series, item.datapoint);
+        }
+    });
+});
+</script> 
+<img src="label.jpg"/>
+<br/>
+<br/>
+<hr/>
+<div id="Calc" >
+
+ <FORM NAME="Calc">
+<TABLE BORDER=4>
+<TR>
+<TD>
+<INPUT TYPE="text"   NAME="Input" Size="16">
+<br>
+</TD>
+</TR>
+<TR>
+<TD>
+<INPUT TYPE="button" NAME="one"   VALUE="  1  " OnClick="Calc.Input.value += '1'">
+<INPUT TYPE="button" NAME="two"   VALUE="  2  " OnCLick="Calc.Input.value += '2'">
+<INPUT TYPE="button" NAME="three" VALUE="  3  " OnClick="Calc.Input.value += '3'">
+<INPUT TYPE="button" NAME="plus"  VALUE="  +  " OnClick="Calc.Input.value += ' + '">
+<br>
+<INPUT TYPE="button" NAME="four"  VALUE="  4  " OnClick="Calc.Input.value += '4'">
+<INPUT TYPE="button" NAME="five"  VALUE="  5  " OnCLick="Calc.Input.value += '5'">
+<INPUT TYPE="button" NAME="six"   VALUE="  6  " OnClick="Calc.Input.value += '6'">
+<INPUT TYPE="button" NAME="minus" VALUE="  -  " OnClick="Calc.Input.value += ' - '">
+<br>
+<INPUT TYPE="button" NAME="seven" VALUE="  7  " OnClick="Calc.Input.value += '7'">
+<INPUT TYPE="button" NAME="eight" VALUE="  8  " OnCLick="Calc.Input.value += '8'">
+<INPUT TYPE="button" NAME="nine"  VALUE="  9  " OnClick="Calc.Input.value += '9'">
+<INPUT TYPE="button" NAME="times" VALUE="  x  " OnClick="Calc.Input.value += ' * '">
+<br>
+<INPUT TYPE="button" NAME="clear" VALUE="  c  " OnClick="Calc.Input.value = ''">
+<INPUT TYPE="button" NAME="zero"  VALUE="  0  " OnClick="Calc.Input.value += '0'">
+<INPUT TYPE="button" NAME="DoIt"  VALUE="  =  " OnClick="Calc.Input.value = eval(Calc.Input.value)">
+<INPUT TYPE="button" NAME="div"   VALUE="  /  " OnClick="Calc.Input.value += ' / '">
+<br>
+</TD>
+</TR>
+</TABLE>
+</FORM>
+</div> 
+<script>
+function checkAns(vary,varz,soln)
+{
+ var x = document.getElementById(vary) ;
+ if( x.value == soln ) 
+ {
+  $(varz).append('<td><img src="correct.gif"></td>');  
+
+}
+ else
+ {
+  $(varz).append('<td><img src="wrong.gif"></td>');  
+ }
+}
+</script>
+<br/>
+<br/>
+<div id="QuesAns">
+ <table id="Ques1" border=0>
+ <tr>
+  <td>
+  Q1.What is the capital of India ? 
+  </td>
+ </tr>
+ <tr id="qans1">
+  <td> Ans: <input type="text" id="ans1"/></td>
+  <td> <input type="button" value="Submit Answer" OnClick="checkAns('ans1','#qans1','Delhi');" /></td>
+ </tr> 
+ <table>
+ </div>
+</div>
+ </body> 
+</html> 

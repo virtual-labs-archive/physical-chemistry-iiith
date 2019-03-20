@@ -1,0 +1,630 @@
+<!-- This file needs to be edited by the lab developer to suit
+the requirements of their lab in particular.-->
+
+<!-- Add class="default" to include any element as it is
+specified in default.html. 
+Do not include class="default" to the elements that you want to
+edit -->
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<div id="experiment"> <!-- The Experiment Document Container-->
+
+  <!-- The lab Header contains the logo and the name of the lab,
+  usually displayed on the top of the page-->
+
+  <header id="experiment-header" class="default">
+  
+    <div id="experiment-header-logo" class="logo">
+      <!-- Enclose the logo image of your lab or write it in 
+      text-->
+      <img src="../images/logo.jpg" />
+    </div>
+
+    <div id="experiment-header-heading" class="heading">
+      <!-- Write the name of your lab and link it to the home 
+      page of your lab (h1 tag is preferred while writing your 
+      lab name)-->
+      <a href="../index.html">Physical Chemistry Lab</a>	
+    </div>
+
+    <!-- Add any additional element you want to add to the lab 
+    header, For example : Help (Enclosing them with suitable 
+    div is recommended)-->
+
+  </header>
+
+
+  <!-- The lab article is the main content area where all the 
+  experiment content sits-->
+  <article id="experiment-article">
+  
+    <!-- The lab article has an header, optional navigational 
+    menu, number of sections, an optional sidebar and a closing 
+    footer-->
+     <div id="experiment-article-breadcrumb" class="breadcrumb">
+     </div>
+    
+      <header id="experiment-article-heading" class="heading">
+        <!-- You can add a welcome message or title of the 
+        experiment here -->
+Nuclear Magnetic Resosnace Spectrocopy and Evaulation of Simple 1H NMR Spectra of Select Organic Compounds 
+        <!-- Add any additional element if required with proper 
+        enclosing-->
+      </header>
+
+      <!-- Navigation menu is useful to organize the view of 
+      multiple sections inside the article-->
+      <nav id="experiment-article-navigation" class="default">
+        <ul id="experiment-article-navigation-menu">
+          <!-- The menu can be dynamically generated to contain 
+          the headings of your sections or instead write the 
+          menu items of your choice individually enclosedu in 
+          <li> tag as shown below-->
+        </ul>
+      </nav>
+
+      <!-- All the sections of your lab or experiment can be 
+      enclosed together with a div element as shown below-->
+      <div id="experiment-article-sections">
+
+        <!-- First section of the article-->
+        <section id="experiment-article-section-1">
+          
+          <div id="experiment-article-section-1-icon" 
+          class="icon">
+	    <!-- Enclose the icon image of your lab -->
+	    <img src="../images/introduction.jpg" />
+	  </div>	
+          
+          <!-- The heading for the section can be enclosed in a 
+          div tag. -->
+          <div id="experiment-article-section-1-heading" 
+          class="heading">
+            Introduction
+          </div>
+
+          <!-- Write the section content inside a paragraph 
+          element, You can also include images with <img> tag -->
+          <div id="experiment-article-section-1-content" 
+          class="content">	
+            <p>
+Nuclear Magnetic Resonance (NMR) spectroscopy is one of the powerful analytical techniques used in determining the structure of organic compounds. Isotopes of 1H, 13C, 19F and 31P have I = ½ and of great interest. 1H NMR or the proton NMR is the technique in which the hydrogen nuclei of the compound/substance is studied in order to determine the structure of the compound under study. The two most characteristic of  a NMR spectra are the chemical shift and the coupling constant. This experiment deals with virtually recording the proton NMR spectra for a set of samples and analyzing them. <p>
+
+<center><img src="./images/figure1_intro.png"  style="width:599px; height:397px;" /></center></p><p>
+
+        </div>
+
+
+      </section>
+
+      <!-- Second section of the article-->
+      <section id="experiment-article-section-2">
+        
+        <div id="experiment-article-section-2-icon" 
+        class="icon">
+	  <!-- Enclose the icon image of your lab. -->
+	  <img src="../images/theory.jpg" />
+	</div>
+				
+        <!-- The heading for the section can be enclosed in a 
+        div tag. -->
+        <div id="experiment-article-section-2-heading" 
+        class="heading">
+          Theory
+        </div>
+
+
+        <!-- Write the section content inside a paragraph 
+        element, we can also include images with <img> tag -->
+        <div id="experiment-article-section-2-content" 
+        class="content">
+          <p>	
+
+Nuclei with odd atomic (number of protons) or mass number (total number of protons and neutrons) or both have quantized spin angular momentum and a magnetic moment. Interaction of the magnetic moment of an atomic nucleus (µ) with an external magnetic field  results in absorption of energy and change their spin orientation with respect to the external field. NMR gives the chemical properties of molecules by studying the magnetic properties of the atomic nuclei which is measured by resonant absorption by nuclei. 
+
+<br>
+<center>
+<table border="0" spacing="0"><tr><td><img src="./images/figure3_theory.png" style="width:256px; height:175px;" /></td><td><img src="./images/figure4_theory.png" style="width:246px; height:180px;" /></td></tr></table>
+</center></p><p>
+The nuclear spin energy levels in an external magnetic field B0.
+<br>
+Source: <a href="http://www.physicscentral.com/explore/action/fmri1.cfm">http://www.physicscentral.com/explore/action/fmri1.cfm</a> <br>
+</p><p>
+<br>
+<b>Chemical Shift: </b>
+
+<br>
+Nuclei in a different chemical environment experience different magnetic field. The electron cloud around the nuclei induces electronic angular momentum which gives rise to an additional magnetic field ß, which is given as:
+<br><br>
+ 		δß = -σß0
+<br><br>
+where 'σ' is the shield constant. The electrons around the nucleus shield the nuclei from effective magnetic field and requires energy of lower frequency to cause resonance. Therefore different nuclei in the same compound come into resonance at different frequencies. In general  hydrogens bound to carbons attached to electron withdrawing groups tend to resonate at higher frequencies . The position of where a particular hydrogen atom resonates relative to TMS is called its chemical shift. 
+<br><br>
+	δ = Observed chemical shift (Hz) x 106/Spectrometer frequency (Hz)  (parts per million)
+<br><br>
+The peak value of TMS is assigned as  d = 0.00.
+<br><br>
+
+<b>Solvent and internal standard: </b><br>
+
+Tetramethylsilane is used as an internal standard during the NMR measurements for the following reasons:
+<br><br>
+	1.	Is inert, non toxic, low boiling point and can be recovered by distillation
+<br>
+	2.	Very small amount is required for measurement
+<br>
+	3.	Has 12 equivalent protons and thus give a single strong peak  
+<br>
+	4.	The signal appears outside (more upfield) away from most of the protons signals 
+
+<br><br>
+When using the modern NMR instruments, no internal standard is added to the sample to be measure. The difference between the solvent signal and the TMS is known. The modern instruments detect the solvent signal and lock them, which now can serve as the internal standard.
+<br>
+<center><img src="./images/figure5_theory.png"  style="width:350px; height:150px;" /></center></p><p>
+
+ 					Source: jpkc.henu.edu.cn <br><br>
+ 
+To record a NMR spectrum of a particular sample it is required to dissolve the sample in a solvent. To avoid the sample signals one needs to use deuterated solvent. For a non polar to moderately polar compounds deuterated chloroform is commonly used. For polar compounds deuterated Dimethyl sulfoxide (DMSO)  is commonly used. Any traces of impurity in the solvents used are detected at CHCl3 : 7.25 ppm and DMSO : 2.5 ppm
+<br><br>
+
+<b>NMR Spectra:</b>
+<br>
+
+An NMR spectrum gives various information of the compound that it helps in structural elucidation of the organic molecule; 
+<br><br>
+	•	The number of signals gives the the number of different sets of protons present in the sample 	measured.
+<br>
+	•	Chemical shift gives the environment of the protons
+<br>
+	•	Multiplicity  gives information on the number of protons on adjacent atoms
+<br>
+	•	Integration of the peaks (peak area) gives the number of protons in each environment
+<br>
+<center><img src="./images/figure6_theory.png"  style="width:437px; height:262px;" /></center></p><p>
+
+Source: <a href="http://cactus.dixie.edu/smblack/chem2310/ch5/LG_key_Ch5.pdf">http://cactus.dixie.edu/smblack/chem2310/ch5/LG_key_Ch5.pdf</a>
+<br><br>
+</p>
+
+        </div>
+      </section>
+
+
+      <section id="experiment-article-section-3">
+        
+        <div id="experiment-article-section-3-icon" 
+        class="icon">
+	  <!-- Enclose the icon image of your lab. -->
+	  <img src="../images/objective.jpg" />
+	</div>
+     
+        <div id="experiment-article-section-3-heading" 
+        class="heading">
+          Objective
+        </div>
+
+        <div id="experiment-article-section-3-content" 
+        class="content">
+          <p>
+<ul>
+<li> To understand the basic principles of proton NMR.</li>
+<li> Systemically evaluate three sets of compounds with n equivalent number of protons.  </li>
+</ul>
+<center><img src="./images/figure2_objective.png"  style="width:566px; height:157px;" /></center></p><p>
+Source: <a href="http://www.mhhe.com/physsci/chemistry/carey/student/olc/ch13nmr.html">http://www.mhhe.com/physsci/chemistry/carey/student/olc/ch13nmr.html</a>
+	</p> 
+
+        </div>
+
+      </section>
+
+
+      <section id="experiment-article-section-4">
+
+        <div id="experiment-article-section-4-icon" 
+        class="icon">
+	  <!-- Enclose the icon image of your lab.-->
+	  <img src="../images/simulation.jpg" />
+	</div>
+
+        <div id="experiment-article-section-4-heading" 
+        class="heading">
+          Experiment
+        </div>
+
+        <div id="experiment-article-section-4-content" 
+        class="content">
+          <p>
+	     <a href="NMR.swf">Click here</a>
+          </p>
+        </div>
+
+      </section>
+
+      <section id="experiment-article-section-5">
+   
+        <div id="experiment-article-section-5-icon" 
+        class="icon">
+	  <!-- Enclose the icon image of your lab.-->
+	  <img src="../images/manual.jpg" />
+	</div>
+
+        <div id="experiment-article-section-5-heading" 
+        class="heading">
+          Manual
+        </div>
+
+        <div id="experiment-article-section-5-content" 
+        class="content">
+          <p>
+
+Follow the procedure given below:<br><br>
+<span style="color:blue">Step1:</span> Click on Sample.<br><br>
+<span style="color:blue">Step 2:</span> Select one sample (Benzene, Acetaldehyde,Ethylacetate).<br>(The sample gets loaded on to the sample cavity).<br><br>
+<span style="color:blue">Step 3:</span>Press 'Start' to start the experiment.<br>(The NMR spectrum of the corresponding sample gets displayed).<br><br>
+<span style="color:blue">Step 4:</span> Press 'Evaluate' to go to the evaulation page.<br><br>
+<span style="color:blue">Step 5:</span>Calculate and analyse the spectrum.
+ 	</p>
+          </div>
+
+        </section>
+
+        <section id="experiment-article-section-6">
+      
+          <div id="experiment-article-section-6-icon" 
+          class="icon">
+	    <!-- Enclose the icon image of your lab.-->
+	    <img src="../images/quizzes.jpg" />
+	  </div>
+
+          <div id="experiment-article-section-6-heading" 
+          class="heading">
+            Quizzes
+          </div>
+
+          <div id="experiment-article-section-6-content" 
+          class="content">
+            
+            <p>
+              
+             <div class="success"><h2 style="color:green;text-align:center">right answer!</h2></div>
+<div class="failure"><h2 style="color:red;text-align:center">oops, wrong answer!</h2></div>  
+
+ <script type="text/javascript" src="../js/jquery-1.4.2.min.js"></script>
+
+ <script type="text/javascript" src="../js/modernizr-1.5.min.js">
+  </script>
+  <script type="text/javascript">
+          $(document).ready(function(){
+
+			          $(".q2").hide();
+				  $(".q3").hide();
+				  $(".q4").hide();
+				  $(".q5").hide();
+				  $(".q6").hide();
+				  $(".q7").hide();
+				  $(".q8").hide();
+				  $(".q9").hide();
+				  $(".q10").hide();
+				  $(".success").hide();
+				  $(".failure").hide();
+				  });
+var count=0;
+function checkAnswer1(value,t)
+{
+	var t1=t+1;
+	if(value==10){
+		$(".failure").hide();
+		$(".success").show();
+		$(".q"+t).hide();
+		$(".success").hide(1000);
+		$(".q"+t1).show(2000);
+		count+=1;
+	}
+	else{
+		$(".success").hide();
+		$(".failure").show();
+		$(".q"+t).hide();
+		$(".failure").hide(1000);
+		$(".q"+t1).show(2000);
+	}
+	if(t1==11)
+	{
+		$(".success").hide();
+		$(".failure").hide();
+		setTimeout("alert('You secured '+ count +' out of 10')",2000);
+	}
+}
+</script>
+
+
+<form name="q1" class="q1">
+
+<p><b>1.  NMR technique uses:</b><br>
+ <input type="radio" name="q1" id="q1" value="0" onClick="checkAnswer1(this.value,1)">Microwave<br>
+ <input type="radio" name="q1" id="q1" value="10" onClick="checkAnswer1(this.value,1)">Radio waves<br>
+ <input type="radio" name="q1" id="q1" value="1" onClick="checkAnswer1(this.value,1)">Infrared radiation<br>
+ <input type="radio" name="q1" id="q1" value="2" onClick="checkAnswer1(this.value,1)">Gamma radiation<br>
+<br><br></p>
+</form>
+
+<form class="q2">
+<p><b>2. The x-axis in a NMR spectrum is </b><br>
+ <input type="radio" name="q2" id="q2" value="10" onClick="checkAnswer1(this.value,2)">ratio of the magnetic field strength in ppm<br>
+ <input type="radio" name="q2" id="q2" value="1" onClick="checkAnswer1(this.value,2)">frequency in cm-1<br>
+ <input type="radio" name="q2" id="q2" value="0" onClick="checkAnswer1(this.value,2)">mass to charge ratio (m/z)<br>
+ <input type="radio" name="q2" id="q2" value="2" onClick="checkAnswer1(this.value,2)">Absorbance<br>
+<br><br></p>
+</form>
+
+<form class="q3">
+<p><b>3.  A shielded proton is the one which experiences:</b><br>
+ <input type="radio" name="q3" id="q3" value="0" onClick="checkAnswer1(this.value,3)">More electron density and more magnetic field strength<br>
+ <input type="radio" name="q3" id="q3" value="1" onClick="checkAnswer1(this.value,3)">Less electron density and less magnetic field strength<br>
+ <input type="radio" name="q3" id="q3" value="10" onClick="checkAnswer1(this.value,3)"> More electron density and less magnetic field strength<br>
+ <input type="radio" name="q3" id="q3" value="2" onClick="checkAnswer1(this.value,3)">Less electron density and more magnetic field strength<br>
+<br><br></p>
+</form>
+
+<form class="q4">
+<p><b>4. The internal reference standard used in NMR experiments is:</b><br>
+ <input type="radio" name="q4" id="q4" value="10" onClick="checkAnswer1(this.value,4)"> tetramethylsilane<br>
+ <input type="radio" name="q4" id="q4" value="1" onClick="checkAnswer1(this.value,4)"> deuterated solvents<br>
+ <input type="radio" name="q4" id="q4" value="0" onClick="checkAnswer1(this.value,4)"> Nor-Leucine <br>
+ <input type="radio" name="q4" id="q4" value="2" onClick="checkAnswer1(this.value,4)">2,2-diphenyl-1-picrylhydrazyl <br>
+<br><br></p>
+</form>
+
+<form class="q5">
+<p><b>5.  The TMS (tetramethylsilane) peak value is assigned at:</b><br>
+ <input type="radio" name="q5" id="q5" value="2" onClick="checkAnswer1(this.value,5)"> δ = 0.05<br>
+ <input type="radio" name="q5" id="q5" value="1" onClick="checkAnswer1(this.value,5)"> δ = 0.11<br>
+ <input type="radio" name="q5" id="q5" value="0" onClick="checkAnswer1(this.value,5)"> δ = 1.00<br>
+ <input type="radio" name="q5" id="q5" value="10" onClick="checkAnswer1(this.value,5)"> δ = 0.00<br>
+<br><br></p>
+</form>
+
+<form class="q6">
+<p><b>6. The number of hydrogens are calculated from peak integration by studying the</b><br>
+ <input type="radio" name="q6" id="q6" value="1" onClick="checkAnswer1(this.value,6)"> Intensity of the peak <br>
+ <input type="radio" name="q6" id="q6" value="10" onClick="checkAnswer1(this.value,6)"> Area under the curve<br>
+ <input type="radio" name="q6" id="q6" value="0" onClick="checkAnswer1(this.value,6)"> Position of the peak<br>
+ <input type="radio" name="q6" id="q6" value="2" onClick="checkAnswer1(this.value,6)"> frequency used<br>
+<br><br></p>
+</form>
+
+<form class="q7">
+<p><b>7. The most common  deuterated solvent used for polar compounds is:</b><br>
+ <input type="radio" name="q7" id="q7" value="1" onClick="checkAnswer1(this.value,7)"> DMF<br>
+ <input type="radio" name="q7" id="q7" value="10" onClick="checkAnswer1(this.value,7)"> DMSO<br>
+ <input type="radio" name="q7" id="q7" value="0" onClick="checkAnswer1(this.value,7)"> Chroloform<br>
+ <input type="radio" name="q7" id="q7" value="2" onClick="checkAnswer1(this.value,7)"> Water<br>
+<br><br></p>
+</form>
+
+<form class="q8">
+<p><b>8. The 13C NMR spectrum gives information about:</b><br>
+ <input type="radio" name="q8" id="q8" value="1" onClick="checkAnswer1(this.value,8)"> Number of equivalent Carbon atoms<br>
+ <input type="radio" name="q8" id="q8" value="10" onClick="checkAnswer1(this.value,8)"> Number of non- equivalent Carbon atoms<br>
+ <input type="radio" name="q8" id="q8" value="0" onClick="checkAnswer1(this.value,8)"> Number of  equivalent hydrogen atoms<br>
+ <input type="radio" name="q8" id="q8" value="2" onClick="checkAnswer1(this.value,8)"> Number of non- equivalent hydrogen atoms<br>
+</form></p>
+
+<br><br>
+<form class="q9">
+<p><b>9.  The number of peaks tells you:</b><br>
+ <input type="radio" name="q9" id="q9" value="10" onClick="checkAnswer1(this.value,9)">the number of different proton environments<br>
+ <input type="radio" name="q9" id="q9" value="1" onClick="checkAnswer1(this.value,9)"> the general environment of the protons<br>
+ <input type="radio" name="q9" id="q9" value="0" onClick="checkAnswer1(this.value,9)"> number of protons atoms on the adjacent atom<br>
+ <input type="radio" name="q9" id="q9" value="2" onClick="checkAnswer1(this.value,9)"> number of protons in each environment<br>
+<br><br></p>
+</form>
+
+<form class="q10">
+<p><b>10. In a NMR spectrum the peak multiplicity gives:</b><br>
+ <input type="radio" name="q10" id="q10" value="0" onClick="checkAnswer1(this.value,10)"> the number of different proton environments<br>
+ <input type="radio" name="q10" id="q10" value="1" onClick="checkAnswer1(this.value,10)"> the general environment of the protons<br>
+ <input type="radio" name="q10" id="q10" value="10" onClick="checkAnswer1(this.value,10)"> number of protons atoms on the adjacent atom<br>
+ <input type="radio" name="q10" id="q10" value="2" onClick="checkAnswer1(this.value,10)"> number of protons in each environment<br>
+</form></p>
+<br><br> 
+ 
+
+  <h2>Solutions</h2><br><p>
+ <b>1. NMR technique uses:</b><br>
+<span style="color:green">Radio waves</span><br><br>
+
+
+<b>2. The x-axis in a NMR spectrum is</b><br>
+<span style="color:green">ratio of the magnetic field strength in ppm</span><br><br>
+
+ <b>3. A shielded proton is the one which experiences: </b><br>
+<span style="color:green">More electron density and less magnetic field strength</span><br><br>
+
+ <b>4.  The internal reference standard used in NMR experiments is:</b><br>
+<span style="color:green"> tetramethylsilane</span><br><br>
+
+ <b>5. The TMS (tetramethylsilane) peak value is assigned at:</b><br>
+<span style="color:green"> δ = 0.00</span><br><br>
+
+ <b>6. The number of hydrogens are calculated from peak integration by studying the</b><br>
+<span style="color:green">Aread under the curve</span><br><br>
+
+ <b>7. The most common  deuterated solvent used for polar compounds is:</b><br>
+<span style="color:green">DMSO</span><br><br>
+
+ <b>8. The 13C NMR spectrum gives information about:</b><br>
+<span style="color:green"> Number of non- equivalent Carbon atoms</span><br><br>
+
+ <b>9. The number of peaks tells you:</b><br>
+<span style="color:green">the number of different proton environments</span><br><br>
+
+ <b>10. In a NMR spectrum the peak multiplicity gives: </b><br>
+<span style="color:green">number of protons atoms on the adjacent atom</span><br><br>
+
+            </p>
+
+          </div>
+
+        </section>
+
+        
+			
+		
+        <section id="experiment-article-section-8">
+   
+          <div id="experiment-article-section-8-icon" 
+          class="icon">
+	    <!-- Enclose the icon image of your lab.-->
+	    <img src="../images/readings.jpg" />
+	  </div>
+
+          <div id="experiment-article-section-8-heading" 
+          class="heading">
+            Further Readings
+          </div>
+
+          <div id="experiment-article-section-8-content" 
+          class="content">
+            <h2> Book References:</h2><br><p>
+ 	1.	J. Keeler (2005). Understanding NMR Spectroscopy. John Wiley & Sons interpreting Infrared, Raman, and Nuclear Magnetic Resonance Spectra, 2-Volume Set R.A. Nyquist, Academic Press, New York, NY, 2001.</br>
+	2.      <a href="http://www.physicscentral.com/explore/action/fmri1.cfm">http://www.physicscentral.com/explore/action/fmri1.cfm</a><br>
+	3.	<a href="http://cactus.dixie.edu/smblack/chem2310/ch5/LG_key_Ch5.pdf">http://cactus.dixie.edu/smblack/chem2310/ch5/LG_key_Ch5.pdf</a><br>
+	4.	<a href="http://www.knockhardy.org.uk/sci_htm_files/nmr2.pdf">http://www.knockhardy.org.uk/sci_htm_files/nmr2.pdf</a><br>
+	5.	<a href="http://www.chemguide.co.uk/analysismenu.html#top">http://www.chemguide.co.uk/analysismenu.html#top</a><br>
+	6.	<a href="http://science.csustan.edu/tutorial/nmr/index.htm">http://science.csustan.edu/tutorial/nmr/index.htm</a><br>
+	7.	<a href="http://www.wisc-online.com/objects/ViewObject.aspx?ID=GCH6304">http://www.wisc-online.com/objects/ViewObject.aspx?ID=GCH6304</a><br>
+	8.	<a href="http://www.youtube.com/watch?v=SBuXwSFyZwU&feature=player_embedded">http://www.youtube.com/watch?v=SBuXwSFyZwU&feature=player_embedded</a><br>
+	9.	<a href="http://www.youtube.com/watch?v=sDVTzayocWk&feature=related">http://www.youtube.com/watch?v=sDVTzayocWk&feature=related</a><br>
+	10.	<a href="http://orgchem.colorado.edu/procedures/NMR/NMRacquisition.html">http://orgchem.colorado.edu/procedures/NMR/NMRacquisition.html</a><br>
+	11.	<a href="http://www.mhhe.com/physsci/chemistry/carey/student/olc/ch13nmr.html">http://www.mhhe.com/physsci/chemistry/carey/student/olc/ch13nmr.html</a><br>
+</p>          
+</div>
+
+        </section>
+      <!-- <section id="experiment-article-section-9">
+	  
+          <div id="experiment-article-section-9-icon" 
+          class="icon"> -->
+	    <!-- Enclose the icon image of your lab. -->
+	<!--    <img src="../images/experiments.jpg" />
+	  </div>
+	
+          <div id="experiment-article-section-9-heading" 
+          class="heading">
+	    Experiments
+	  </div>
+	
+          <div id="experiment-article-section-9-content" 
+          class="content">
+	    <p>
+	      <ul id="list-of-experiments">
+	  <li class="experiment-thumb"> 
+					<a href="../exp6/"> 
+						<strong>Instrumentation and working principles of infra red (IR) spectroscopy using salt plates.</strong> 
+					</a> 
+				</li> 
+	
+				<li class="experiment-thumb"> 
+					<a href="../exp7/"> 
+						<strong>Instrumentation and working principles of solutions infra red (IR) spectroscopy </strong> 
+					</a> 
+				</li> 
+ 
+				<li class="experiment-thumb"> 
+					<a href="../exp8/"> 
+						<strong>Instrumentation and working principles principles of mass spectroscopy</strong> 
+					</a> 
+				</li> 
+				<li class="experiment-thumb"> 
+					<a href="../exp9/"> 
+						<strong>Determination of molar mass of simple compounds using mass spectroscopy</strong> 
+					</a> 
+				</li> 
+				<li class="experiment-thumb"> 
+					<a href="../exp5/"> 
+						<strong>Nuclear magnetic resosnace spectrocopy and evaulation of simple 1H NMR spectra of select organic compounds</strong> 
+					</a> 
+				</li> 
+	
+ 
+ 
+				<li class="experiment-thumb"> 
+					<a href="../exp10/"> 
+						<strong>Identification of unknown components using spectroscopic techniques.</strong> 
+					</a> 
+				</li> 
+				<li class="experiment-thumb"> 
+					<a href="../exp1/"> 
+						<strong>Principles of electron paramagnetic resonance spectroscopy</strong> 
+					</a> 
+				</li> 
+				<li class="experiment-thumb"> 
+					<a href="../exp2/"> 
+						<strong>Electron paramagnetic resonance spectral studies of select organic free radicals</strong> 
+					</a> 
+				</li> 
+	  </ul>
+	    </p>
+	  </div>
+	
+        </section> -->
+        <section id="experiment-article-section-10">
+	  
+          <div id="experiment-article-section-10-icon" 
+          class="icon">
+	    <!-- Enclose the icon image of your lab. -->
+	    <img src="../images/feedback.jpg" />
+	  </div>
+	
+          <div id="experiment-article-section-10-heading" 
+          class="heading">
+	    Feedback
+	  </div>
+	
+          <div id="experiment-article-section-10-content" 
+          class="content">
+	    <p>
+	      <a href="http://virtual-labs.ac.in/feedback/" target="_blank">Feedback</a>
+
+	    </p>
+	  </div>
+	
+        </section>
+
+      </div>
+
+
+    <!-- An article can have a sidebar that contain related 
+    links and additional material (however it is kept optional 
+    at this moment) -->
+    <aside id="lab-article-sidebar" class="default">
+      <!-- put the content that you want to appear in the 
+      sidebar -->	
+    </aside>
+
+
+    <!-- Article footer can display related content and 
+    additional links -->						
+    <footer id="lab-article-footer" class="default">
+      <!-- Put the content that you want to appear here -->
+    </footer>
+
+  </article>
+
+
+  <!-- Links to other labs, about us page can be kept the lab 
+  footer-->
+  <footer id="lab-footer" class="default">
+    <!-- Put the content here-->
+  </footer>
+
+</div>		
+
+</body>
+</html>
