@@ -102,8 +102,8 @@
 <p>
 <div class="success"><h2 style="color:green;text-align:center">right answer!</h2></div>
 <div class="failure"><h2 style="color:red;text-align:center">oops, wrong answer!</h2></div>
-<script src="../js/jquery-1.4.2.min.js" type="text/javascript"></script>
-<script src="../js/modernizr-1.5.min.js" type="text/javascript">
+<script src="../../lib/js/jquery-1.4.2.min.js" type="text/javascript"></script>
+<script src="../../lib/js/modernizr-1.5.min.js" type="text/javascript">
 </script>
 <script type="text/javascript">
           $(document).ready(function(){
@@ -119,6 +119,7 @@
 				  $(".q10").hide();
 				  $(".success").hide();
 				  $(".failure").hide();
+				  $("#sol").hide();
 				  });
 var count=0;
 function checkAnswer1(value,t)
@@ -143,7 +144,8 @@ function checkAnswer1(value,t)
 	{
 		$(".success").hide();
 		$(".failure").hide();
-		setTimeout("alert('You secured '+ count +' out of 10')",2000);
+		$("#sol").show();
+		setTimeout("alert('You secured '+ count +' out of 10')",100);
 	}
 }
 </script>
@@ -227,6 +229,7 @@ function checkAnswer1(value,t)
 <input id="q10" name="q10" onclick="checkAnswer1(this.value,10)" type="radio" value="2"> number of protons in each environment<br>
 </br></input></br></input></br></input></br></input></br></p></form>
 <br><br>
+<div id="sol">
 <h2>Solutions</h2><br><p>
 <b>1. NMR technique uses:</b><br>
 <span style="color:green">Radio waves</span><br><br>
@@ -248,6 +251,7 @@ function checkAnswer1(value,t)
 <span style="color:green">the number of different proton environments</span><br><br>
 <b>10. In a NMR spectrum the peak multiplicity gives: </b><br>
 <span style="color:green">number of protons atoms on the adjacent atom</span><br><br>
+</div>
 </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></p>
 </br></br></br></br></br></div>						</div>
 					</div>
