@@ -126,19 +126,19 @@ function checkAnswer1(value,t)
 {
 	var t1=t+1;
 	if(value==10){
-		$(".failure").hide();
-		$(".success").show();
-		$(".q"+t).hide();
-		$(".success").hide(1000);
-		$(".q"+t1).show(2000);
+		$(".failure").hide(1);
+		$$(".success").hide(1);
+		$(".success").show(1000);
+		$(".q"+t).hide(1);
+		$(".q"+t1).show(250);
 		count+=1;
 	}
 	else{
-		$(".success").hide();
-		$(".failure").show();
-		$(".q"+t).hide();
-		$(".failure").hide(1000);
-		$(".q"+t1).show(2000);
+		$(".failure").hide(1);
+		$(".success").hide(1);
+		$(".failure").show(1000);
+		$(".q"+t).hide(1);
+		$(".q"+t1).show(250);
 	}
 	if(t1==10)
 	{
