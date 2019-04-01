@@ -1,0 +1,494 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
+<html> 
+   <head> 
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+      <title>Graph Plot</title> 
+      <link href="layout.css" rel="stylesheet" type="text/css"></link> 
+      <!--[if IE]><script language="javascript" type="text/javascript" src="../excanvas.min.js"></script><![endif]--> 
+      <script language="javascript" type="text/javascript" src="jquery.js"></script> 
+      <script language="javascript" type="text/javascript" src="jquery.flot.js"></script> 
+   </head> 
+   <body> 
+
+      <table>
+	 <tr>
+	    <td>
+	       <div id="placeholder" style="width:600px;height:500px"></div>  
+	    </td>
+	    <td>
+	       <p id="hoverdata">Mouse hovers at
+	       (<span id="x">0</span>, <span id="y">0</span>  ). </p> 
+	    </td>
+	 </tr>
+	 <table>
+	    <!--   <p>A tooltip is easy to build with a bit of jQuery code and the
+	    data returned from the plot.</p> 
+
+	    <p><input id="enableTooltip" type="checkbox">Enable tooltip</p> 
+	    -->
+	    <script id="source" language="javascript" type="text/javascript"> 
+	       $(function () {
+		     var sin = [];
+		     //    sin.push([i, Math.sin(i)]);
+		     sin.push([11.01,0.00]);
+		     sin.push([10.572,0.00]);
+		     sin.push([10.572,1000.000]);
+		     sin.push([10.572,0.00]);
+		     sin.push([10.567,0.00]);
+		     sin.push([10.567,962.000]);
+		     sin.push([10.567,0.00]);
+		     sin.push([8.165,0.00]);
+		     sin.push([8.165,174.000]);
+		     sin.push([8.165,0.00]);
+		     sin.push([8.161,0.00]);
+		     sin.push([8.161,169.000]);
+		     sin.push([8.161,0.00]);
+		     sin.push([8.147,0.00]);
+		     sin.push([8.147,203.000]);
+		     sin.push([8.147,0.00]);
+		     sin.push([8.142,0.00]);
+		     sin.push([8.142,177.000]);
+		     sin.push([8.142,0.00]);
+		     sin.push([8.071,0.00]);
+		     sin.push([8.071,202.000]);
+		     sin.push([8.071,0.00]);
+		     sin.push([8.067,0.00]);
+		     sin.push([8.067,193.000]);
+		     sin.push([8.067,0.00]);
+		     sin.push([8.052,0.00]);
+		     sin.push([8.052,235.000]);
+		     sin.push([8.052,0.00]);
+		     sin.push([7.688,0.00]);
+		     sin.push([7.688,86.000]);
+		     sin.push([7.688,0.00]);
+		     sin.push([7.683,0.00]);
+		     sin.push([7.683,83.000]);
+		     sin.push([7.683,0.00]);
+		     sin.push([7.669,0.00]);
+		     sin.push([7.669,87.000]);
+		     sin.push([7.669,0.00]);
+		     sin.push([7.664,0.00]);
+		     sin.push([7.664,80.000]);
+		     sin.push([7.664,0.00]);
+		     sin.push([7.610,0.00]);
+		     sin.push([7.610,107.000]);
+		     sin.push([7.610,0.00]);
+		     sin.push([7.605,0.00]);
+		     sin.push([7.605,102.000]);
+		     sin.push([7.605,0.00]);
+		     sin.push([7.589,0.00]);
+		     sin.push([7.589,188.000]);
+		     sin.push([7.589,0.00]);
+		     sin.push([7.574,0.00]);
+		     sin.push([7.574,133.000]);
+		     sin.push([7.574,0.00]);
+		     sin.push([7.570,0.00]);
+		     sin.push([7.570,123.000]);
+		     sin.push([7.570,0.00]);
+		     sin.push([7.515,0.00]);
+		     sin.push([7.515,168.000]);
+		     sin.push([7.515,0.00]);
+		     sin.push([7.510,0.00]);
+		     sin.push([7.510,161.000]);
+		     sin.push([7.510,0.00]);
+		     sin.push([7.495,0.00]);
+		     sin.push([7.495,159.000]);
+		     sin.push([7.495,0.00]);
+		     sin.push([7.491,0.00]);
+		     sin.push([7.491,143.000]);
+		     sin.push([7.491,0.00]);
+		     sin.push([7.211,0.00]);
+		     sin.push([7.211,226.000]);
+		     sin.push([7.211,0.00]);
+		     sin.push([7.206,0.00]);
+		     sin.push([7.206,246.000]);
+		     sin.push([7.206,0.00]);
+		     sin.push([7.194,0.00]);
+		     sin.push([7.194,330.000]);
+		     sin.push([7.194,0.00]);
+		     sin.push([7.190,0.00]);
+		     sin.push([7.190,299.000]);
+		     sin.push([7.190,0.00]);
+		     sin.push([7.116,0.00]);
+		     sin.push([7.116,182.000]);
+		     sin.push([7.116,0.00]);
+		     sin.push([7.111,0.00]);
+		     sin.push([7.111,182.000]);
+		     sin.push([7.111,0.00]);
+		     sin.push([7.099,0.00]);
+		     sin.push([7.099,195.000]);
+		     sin.push([7.099,0.00]);
+		     sin.push([7.095,0.00]);
+		     sin.push([7.095,181.000]);
+		     sin.push([7.095,0.00]);
+		     sin.push([7.079,0.00]);
+		     sin.push([7.079,284.000]);
+		     sin.push([7.079,0.00]);
+		     sin.push([7.063,0.00]);
+		     sin.push([7.063,213.000]);
+		     sin.push([7.063,0.00]);
+		     sin.push([7.001,0.00]);
+		     sin.push([7.001,208.000]);
+		     sin.push([7.001,0.00]);
+		     sin.push([6.985,0.00]);
+		     sin.push([6.985,399.000]);
+		     sin.push([6.985,0.00]);
+		     sin.push([6.969,0.00]);
+		     sin.push([6.969,199.000]);
+		     sin.push([6.969,0.00]);
+		     sin.push([6.906,0.00]);
+		     sin.push([6.906,173.000]);
+		     sin.push([6.906,0.00]);
+		     sin.push([6.890,0.00]);
+		     sin.push([6.890,157.000]);
+		     sin.push([6.890,0.00]);
+		     sin.push([0.0,0.00]);
+		     tick = [] ;
+		     for( i = 0 ; i <= 11 ; i++ )
+		     {
+			tick.push([ -1*i , 1*i + ''] ) ;
+		     }
+		     for(i=0;i<sin.length;i++)
+		     {
+			sin[i][0] = -1*sin[i][0] ;
+		     }
+		     var max_value = 0.0 ;
+		     for( i = 0 ; i < sin.length; i++ ){
+			max_value = Math.max( max_value, sin[i][1] ) ;
+		     }
+		     for( i = 0 ; i < sin.length ; i++ ){
+			sin[i][1] = sin[i][1] * 100.0/max_value ;
+		     }
+		     var plot = $.plot($("#placeholder"),
+			   [ { data: sin, label: "<Graph>Intensity"} ], {
+series: {
+lines: { show: true },
+points: { show: false }
+},
+grid: { hoverable: true, clickable: true },
+yaxis: { min: 0, max:105.0 },
+xaxis: {
+inverseTransform: function (v) { return -v; },    
+ticks: tick }
+});
+
+function showTooltip(x, y, contents) {
+   $('<div id="tooltip">' + contents + '</div>').css( {
+position: 'absolute',
+display: 'none',
+top: y + 5,
+left: x + 5,
+border: '1px solid #fdd',
+padding: '2px',
+'background-color': '#fee',
+opacity: 0.80
+}).appendTo("body").fadeIn(200);
+}
+
+var previousPoint = null;
+$("#placeholder").bind("plothover", function (event, pos, item) {
+      $("#x").text(pos.x.toFixed(2));
+      $("#y").text(pos.y.toFixed(2));
+
+      if ($("#enableTooltip:checked").length > 0) {
+      if (item) {
+      if (previousPoint != item.datapoint) {
+      previousPoint = item.datapoint;
+
+      $("#tooltip").remove();
+      var x = item.datapoint[0].toFixed(2),
+      y = item.datapoint[1].toFixed(2);
+
+      showTooltip(item.pageX, item.pageY,
+	 item.series.label + " of " + x + " = " + y);
+      }
+      }
+      else {
+      $("#tooltip").remove();
+      previousPoint = null;            
+      }
+      }
+});
+
+$("#placeholder").bind("plotclick", function (event, pos, item) {
+      if (item) {
+      $("#clickdata").text("You clicked point " + item.dataIndex + " in " + item.series.label + ".");
+      plot.highlight(item.series, item.datapoint);
+      }
+      });
+});
+</script> 
+
+<br/>
+<br/>
+<hr/>
+<div id="Calc" >
+
+   <FORM NAME="Calc">
+      <TABLE BORDER=4>
+	 <TR>
+	    <TD>
+	       <INPUT TYPE="text"   NAME="Input" Size="16">
+	       <br>
+	    </TD>
+	 </TR>
+	 <TR>
+	    <TD>
+	       <INPUT TYPE="button" NAME="one"   VALUE="  1  " OnClick="Calc.Input.value += '1'">
+	       <INPUT TYPE="button" NAME="two"   VALUE="  2  " OnCLick="Calc.Input.value += '2'">
+	       <INPUT TYPE="button" NAME="three" VALUE="  3  " OnClick="Calc.Input.value += '3'">
+	       <INPUT TYPE="button" NAME="plus"  VALUE="  +  " OnClick="Calc.Input.value += ' + '">
+	       <br>
+	       <INPUT TYPE="button" NAME="four"  VALUE="  4  " OnClick="Calc.Input.value += '4'">
+	       <INPUT TYPE="button" NAME="five"  VALUE="  5  " OnCLick="Calc.Input.value += '5'">
+	       <INPUT TYPE="button" NAME="six"   VALUE="  6  " OnClick="Calc.Input.value += '6'">
+	       <INPUT TYPE="button" NAME="minus" VALUE="  -  " OnClick="Calc.Input.value += ' - '">
+	       <br>
+	       <INPUT TYPE="button" NAME="seven" VALUE="  7  " OnClick="Calc.Input.value += '7'">
+	       <INPUT TYPE="button" NAME="eight" VALUE="  8  " OnCLick="Calc.Input.value += '8'">
+	       <INPUT TYPE="button" NAME="nine"  VALUE="  9  " OnClick="Calc.Input.value += '9'">
+	       <INPUT TYPE="button" NAME="times" VALUE="  x  " OnClick="Calc.Input.value += ' * '">
+	       <br>
+	       <INPUT TYPE="button" NAME="clear" VALUE="  c  " OnClick="Calc.Input.value = ''">
+	       <INPUT TYPE="button" NAME="zero"  VALUE="  0  " OnClick="Calc.Input.value += '0'">
+	       <INPUT TYPE="button" NAME="DoIt"  VALUE="  =  " OnClick="Calc.Input.value = eval(Calc.Input.value)">
+	       <INPUT TYPE="button" NAME="div"   VALUE="  /  " OnClick="Calc.Input.value += ' / '">
+	       <br>
+	    </TD>
+	 </TR>
+      </TABLE>
+   </FORM>
+</div> 
+<script>
+   function checkAns(vary,varz,soln)
+   {
+      var x = document.getElementById(vary) ;
+      if( x.value == soln ) 
+      {
+	 $(varz).append('<td><img src="correct.gif"></td>');  
+      }
+      else
+      {
+	 $(varz).append('<td><img src="wrong.gif"></td>');  
+      }
+   }
+   function checkAnsInRange(vary, varz,lx,ly){
+      var x = document.getElementById(vary) ;
+      if( x.value >= lx && x.value <= ly ) 
+      {
+	 $(varz).append('<td><img src="correct.gif"></td>');  
+      }
+      else
+      {
+	 $(varz).append('<td><img src="wrong.gif"></td>');  
+      }
+   }
+</script>
+<br/>
+<br/>
+<div id="QuesAns">
+   <table id="Ques1" border=0>
+
+      <tr>
+	 <td>
+	    <h4> Proton Environment </h4>
+	 </td>
+      </tr>
+      <tr>
+	 <td>
+	    Q1.How many types of proton environment are present ? 
+	 </td>
+      </tr>
+      <tr id="qans1">
+	 <td> Ans: <input type="text" id="ans1"/></td>
+	 <td> <input type="button" value="Submit Answer" OnClick="checkAns('ans1','#qans1','5');" /></td>
+      </tr> 
+
+      <tr>
+	 <td>
+	    Q2. How many different sets of signal would you expect ?
+	 </td>
+      </tr>
+      <tr id="qans2">
+	 <td> Ans: <input type="text" id="ans2"/></td>
+	 <td> <input type="button" value="Submit Answer" OnClick="checkAns('ans2','#qans2','5');" /></td>
+      </tr> 
+
+      <tr>
+	 <td> <h4>Chemical Shift</h4>
+	 </td>
+      </tr>
+      <img src="2nitrophenol.cgi"/>
+      <tr>
+	 <td>
+	    Q3. Give the chemical shift of:- 
+	 </td>
+      </tr>
+
+      <tr id="qans4">
+	 <td> A: <input type="text" id="ans4"/></td>
+	 <td> <input type="button" value="Submit Answer" OnClick="checkAnsInRange('ans4','#qans4',10.52,10.62);" /></td>
+      </tr>
+
+      <tr id="qans5">
+	 <td> B: <input type="text" id="ans5"/></td>
+	 <td> <input type="button" value="Submit Answer" OnClick="checkAnsInRange('ans5','#qans5',7.96,8,06);" /></td>
+      </tr>
+
+      <tr id="qans6">
+	 <td> C: <input type="text" id="ans6"/></td>
+	 <td> <input type="button" value="Submit Answer" OnClick="checkAnsInRange('ans6','#qans6',7.53,7.63);" /></td>
+      </tr>
+
+      <tr id="qans7">
+	 <td> D: <input type="text" id="ans7"/></td>
+	 <td> <input type="button" value="Submit Answer" OnClick="checkAnsInRange('ans7','#qans7',7.11,7.21);" /></td>
+      </tr>
+
+
+      <tr id="qans8">
+	 <td> E: <input type="text" id="ans8"/></td>
+	 <td> <input type="button" value="Submit Answer" OnClick="checkAns('ans8','#qans8',6.94,7.04 );" /></td>
+      </tr>
+
+      <tr>
+	 <td>
+	    Q3(g). 53
+	 </td>
+      </tr>
+      <tr id="qans9">
+	 <td> Ans: <input type="text" id="ans9"/></td>
+	 <td> <input type="button" value="Submit Answer" OnClick="checkAns('ans9','#qans9','2,3,1');" /></td>
+      </tr>
+
+      <br/>
+      <br/>
+      <tr>
+	 <td> <h4> Integration </h4>
+	 </td>
+      </tr>
+      <tr>
+	 <td>
+	    Q4. What is the relative intensity of the peaks ? 
+	 </td>
+      </tr>
+      <tr id="qans10">
+	 <td> Ans: <input type="text" id="ans10"/></td>
+	 <td> <input type="button" value="Submit Answer" OnClick="checkAns('ans10','#qans10','2,3,1');" /></td>
+      </tr>
+      <tr>
+	 <td> <h4> Splitting pattern. </h4>
+	 </td>
+      </tr>
+
+      <tr>
+	 <td>
+	    Q5(a). Number of neighbouring protons for A 
+	 </td>
+
+      </tr>
+      <tr id="qans11">
+	 <td> Ans: <input type="text" id="ans11"/></td>
+	 <td> <input type="button" value="Submit Answer" OnClick="checkAns('ans11','#qans11','0');" /></td>
+      </tr>
+      <tr>
+	 <td>
+	    Q5(b). Number of lines expected ? 
+	 </td>
+      </tr>
+      <tr id="qans12">
+	 <td> Ans: <input type="text" id="ans12"/></td>
+	 <td> <input type="button" value="Submit Answer" OnClick="checkAns('ans12','#qans12','1');" /></td>
+      </tr>
+
+      <tr>
+	 <td>
+	    Q6(a). Number of neighbouring protons for B
+	 </td>
+      </tr>
+      <tr id="qans13">
+	 <td> Ans: <input type="text" id="ans13"/></td>
+	 <td> <input type="button" value="Submit Answer" OnClick="checkAns('ans13','#qans13','1');" /></td>
+      </tr>
+
+      <tr>
+	 <td>
+	    Q6(b). Number of lines expected ? 
+	 </td>
+      </tr>
+
+      <tr id="qans14">
+	 <td> Ans: <input type="text" id="ans14"/></td>
+	 <td> <input type="button" value="Submit Answer" OnClick="checkAns('ans14','#qans14','2');" /></td>
+      </tr>
+
+      <tr>
+	 <td>
+	    Q7(a). Number of neighbouring protons for C
+	 </td>
+      </tr>
+      <tr id="qans15">
+	 <td> Ans: <input type="text" id="ans15"/></td>
+	 <td> <input type="button" value="Submit Answer" OnClick="checkAns('ans15','#qans15','2');" /></td>
+      </tr>
+
+      <tr>
+	 <td>
+	    Q7(b). Number of lines expected ? 
+	 </td>
+      </tr>
+
+      <tr id="qans16">
+	 <td> Ans: <input type="text" id="ans16"/></td>
+	 <td> <input type="button" value="Submit Answer" OnClick="checkAns('ans16','#qans16','3');" /></td>
+      </tr>
+
+
+      <tr>
+	 <td>
+	    Q8(a). Number of neighbouring protons for D
+	 </td>
+      </tr>
+      <tr id="qans19">
+	 <td> Ans: <input type="text" id="ans19"/></td>
+	 <td> <input type="button" value="Submit Answer" OnClick="checkAns('ans19','#qans19','1');" /></td>
+      </tr>
+
+      <tr>
+	 <td>
+	    Q8(b). Number of lines expected ? 
+	 </td>
+      </tr>
+
+      <tr id="qans20">
+	 <td> Ans: <input type="text" id="ans20"/></td>
+	 <td> <input type="button" value="Submit Answer" OnClick="checkAns('ans20','#qans20','2');" /></td>
+      </tr>
+
+
+      <tr>
+	 <td>
+	    Q9(a). Number of neighbouring protons for E
+	 </td>
+      </tr>
+      <tr id="qans17">
+	 <td> Ans: <input type="text" id="ans17"/></td>
+	 <td> <input type="button" value="Submit Answer" OnClick="checkAns('ans17','#qans17','2');" /></td>
+      </tr>
+
+      <tr>
+	 <td>
+	    Q9(b). Number of lines expected ? 
+	 </td>
+      </tr>
+
+      <tr id="qans18">
+	 <td> Ans: <input type="text" id="ans18"/></td>
+	 <td> <input type="button" value="Submit Answer" OnClick="checkAns('ans18','#qans18','3');" /></td>
+      </tr>
+
+
+   </table>
+</div>
+   </body> 
+</html>
