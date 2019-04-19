@@ -24,6 +24,7 @@
     <!-- Custom CSS -->
     <link href="../../../css/style.css" rel="stylesheet">
 	<script type="text/javascript" src = 'tabs.js'></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-67558473-1', 'auto');ga('send', 'pageview');</script>	
 </head>
 <body id="page-top" class="index">
@@ -113,12 +114,14 @@
 				  $(".q4").hide();
 				  $(".q5").hide();
 				  $(".q6").hide();
-				  $(".q7").hide();
 				  $(".q8").hide();
+				  $(".q7").hide();
 				  $(".q9").hide();
 				  $(".q10").hide();
 				  $(".success").hide();
 				  $(".failure").hide();
+				  $(".sol").hide();
+				  console.log("giii");
 				  });
 var count=0;
 function checkAnswer1(value,t)
@@ -144,6 +147,7 @@ function checkAnswer1(value,t)
 		$(".success").hide();
 		$(".failure").hide();
 		setTimeout("alert('You secured '+ count +' out of 10')",2000);
+		$(".sol").show();
 	}
 }
 </script>
@@ -227,6 +231,7 @@ function checkAnswer1(value,t)
 <input id="q10" name="q10" onclick="checkAnswer1(this.value,10)" type="radio" value="2"> number of protons in each environment<br>
 </br></input></br></input></br></input></br></input></br></p></form>
 <br><br>
+<div class="sol">
 <h2>Solutions</h2><br><p>
 <b>1. NMR technique uses:</b><br>
 <span style="color:green">Radio waves</span><br><br>
@@ -248,8 +253,12 @@ function checkAnswer1(value,t)
 <span style="color:green">the number of different proton environments</span><br><br>
 <b>10. In a NMR spectrum the peak multiplicity gives: </b><br>
 <span style="color:green">number of protons atoms on the adjacent atom</span><br><br>
+	
+
 </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></p>
-</br></br></br></br></br></div>						</div>
+</br>
+</div>
+</br></br></br></br></div>						</div>
 					</div>
 			</div>
 			<!-- =================================================================================================================================== -->
