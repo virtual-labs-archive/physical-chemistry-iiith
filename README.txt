@@ -1,7 +1,6 @@
 Congrats !!
 
-* You have successfully downloaded and extracted the
-  ui.tgz .
+* You have successfully downloaded and extracted the ui.tgz .
 
 
 * Changes: New Tabs have been added for 
