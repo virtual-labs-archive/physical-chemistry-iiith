@@ -1,18 +1,20 @@
-
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
-<html> 
- <head> 
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head><!--Google Tag Manager--><script class="gtm">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W59SWTR');</script><!--End Google Tag Manager--> 
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
     <title>Graph Plot</title> 
-    <link href="layout.css" rel="stylesheet" type="text/css"></link> 
+    <link href="layout.css" rel="stylesheet" type="text/css"/> 
     <!--[if IE]><script language="javascript" type="text/javascript" src="../excanvas.min.js"></script><![endif]--> 
-    <script language="javascript" type="text/javascript" src="jquery.js"></script> 
-    <script language="javascript" type="text/javascript" src="jquery.flot.js"></script> 
+    <script language="javascript" src="jquery.js" type="text/javascript"></script> 
+    <script language="javascript" src="jquery.flot.js" type="text/javascript"></script> 
  </head> 
-    <body> 
+    <body><!--Google Tag Manager (noscript)--><noscript class="gtm"><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-W59SWTR" style="display:none;visibility:hidden" width="0"></iframe></noscript><!--End Google Tag Manager (noscript)--> 
  
    <table>
-   <tr>
+   <tbody><tr>
    <td>
     <div id="placeholder" style="width:800px;height:500px"></div>  
     </td>
@@ -21,7 +23,10 @@
      (<span id="x">0</span>, <span id="y">0</span> ). </p> 
     </td>
     </tr>
-   <table>
+   </tbody></table><br/><br/><hr/><div id="Calc">
+
+ <form name="Calc"></form>
+</div><table>
  <!--   <p>A tooltip is easy to build with a bit of jQuery code and the
     data returned from the plot.</p> 
  
@@ -214,46 +219,43 @@ var plot = $.plot($("#placeholder"),
 });
 </script> 
 
-<br/>
-<br/>
-<hr/>
-<div id="Calc" >
 
- <FORM NAME="Calc">
-<TABLE BORDER=4>
-<TR>
-<TD>
-<INPUT TYPE="text"   NAME="Input" Size="16">
-<br>
-</TD>
-</TR>
-<TR>
-<TD>
-<INPUT TYPE="button" NAME="one"   VALUE="  1  " OnClick="Calc.Input.value += '1'">
-<INPUT TYPE="button" NAME="two"   VALUE="  2  " OnCLick="Calc.Input.value += '2'">
-<INPUT TYPE="button" NAME="three" VALUE="  3  " OnClick="Calc.Input.value += '3'">
-<INPUT TYPE="button" NAME="plus"  VALUE="  +  " OnClick="Calc.Input.value += ' + '">
-<br>
-<INPUT TYPE="button" NAME="four"  VALUE="  4  " OnClick="Calc.Input.value += '4'">
-<INPUT TYPE="button" NAME="five"  VALUE="  5  " OnCLick="Calc.Input.value += '5'">
-<INPUT TYPE="button" NAME="six"   VALUE="  6  " OnClick="Calc.Input.value += '6'">
-<INPUT TYPE="button" NAME="minus" VALUE="  -  " OnClick="Calc.Input.value += ' - '">
-<br>
-<INPUT TYPE="button" NAME="seven" VALUE="  7  " OnClick="Calc.Input.value += '7'">
-<INPUT TYPE="button" NAME="eight" VALUE="  8  " OnCLick="Calc.Input.value += '8'">
-<INPUT TYPE="button" NAME="nine"  VALUE="  9  " OnClick="Calc.Input.value += '9'">
-<INPUT TYPE="button" NAME="times" VALUE="  x  " OnClick="Calc.Input.value += ' * '">
-<br>
-<INPUT TYPE="button" NAME="clear" VALUE="  c  " OnClick="Calc.Input.value = ''">
-<INPUT TYPE="button" NAME="zero"  VALUE="  0  " OnClick="Calc.Input.value += '0'">
-<INPUT TYPE="button" NAME="DoIt"  VALUE="  =  " OnClick="Calc.Input.value = eval(Calc.Input.value)">
-<INPUT TYPE="button" NAME="div"   VALUE="  /  " OnClick="Calc.Input.value += ' / '">
-<br>
-</TD>
-</TR>
-</TABLE>
-</FORM>
-</div> 
+
+
+</table><table border="4">
+<tbody><tr>
+<td>
+<input name="Input" size="16" type="text"/>
+<br/>
+</td>
+</tr>
+<tr>
+<td>
+<input name="one" onclick="Calc.Input.value += '1'" type="button" value="  1  "/>
+<input name="two" onclick="Calc.Input.value += '2'" type="button" value="  2  "/>
+<input name="three" onclick="Calc.Input.value += '3'" type="button" value="  3  "/>
+<input name="plus" onclick="Calc.Input.value += ' + '" type="button" value="  +  "/>
+<br/>
+<input name="four" onclick="Calc.Input.value += '4'" type="button" value="  4  "/>
+<input name="five" onclick="Calc.Input.value += '5'" type="button" value="  5  "/>
+<input name="six" onclick="Calc.Input.value += '6'" type="button" value="  6  "/>
+<input name="minus" onclick="Calc.Input.value += ' - '" type="button" value="  -  "/>
+<br/>
+<input name="seven" onclick="Calc.Input.value += '7'" type="button" value="  7  "/>
+<input name="eight" onclick="Calc.Input.value += '8'" type="button" value="  8  "/>
+<input name="nine" onclick="Calc.Input.value += '9'" type="button" value="  9  "/>
+<input name="times" onclick="Calc.Input.value += ' * '" type="button" value="  x  "/>
+<br/>
+<input name="clear" onclick="Calc.Input.value = ''" type="button" value="  c  "/>
+<input name="zero" onclick="Calc.Input.value += '0'" type="button" value="  0  "/>
+<input name="DoIt" onclick="Calc.Input.value = eval(Calc.Input.value)" type="button" value="  =  "/>
+<input name="div" onclick="Calc.Input.value += ' / '" type="button" value="  /  "/>
+<br/>
+</td>
+</tr>
+</tbody></table>
+
+ 
 <script>
 function checkAns(vary,varz,soln)
 {
@@ -272,15 +274,15 @@ function checkAns(vary,varz,soln)
 <br/>
 <div id="QuesAns">
 <h4> Proton environment </h4>
- <table id="Ques1" border=0>
- <tr>
+ <table border="0" id="Ques1">
+ <tbody><tr>
   <td>
   Q1.How many types of proton environment are present ? 
   </td>
  </tr>
  <tr id="qans1">
-  <td> Ans: <input type="text" id="ans1"/></td>
-  <td> <input type="button" value="Submit Answer" OnClick="checkAns('ans1','#qans1','1');" /></td>
+  <td> Ans: <input id="ans1" type="text"/></td>
+  <td> <input onclick="checkAns('ans1','#qans1','1');" type="button" value="Submit Answer"/></td>
  </tr> 
 
  <tr>
@@ -289,34 +291,34 @@ function checkAns(vary,varz,soln)
   </td>
  </tr>
  <tr id="qans2">
-  <td> Ans: <input type="text" id="ans2"/></td>
-  <td> <input type="button" value="Submit Answer" OnClick="checkAns('ans2','#qans2','1');" /></td>
+  <td> Ans: <input id="ans2" type="text"/></td>
+  <td> <input onclick="checkAns('ans2','#qans2','1');" type="button" value="Submit Answer"/></td>
  </tr> 
- </table>
+ </tbody></table>
  <h4> Chemical Shift </h4>
  <table>
- <tr>
+ <tbody><tr>
   <td>
   Q3.Give the chemical shift:- 
   </td>
  </tr>
  <tr id="qans3">
-  <td> Ans: <input type="text" id="ans3"/></td>
-  <td> <input type="button" value="Submit Answer" OnClick="checkAns('ans3','#qans3','7.3');" /></td>
+  <td> Ans: <input id="ans3" type="text"/></td>
+  <td> <input onclick="checkAns('ans3','#qans3','7.3');" type="button" value="Submit Answer"/></td>
  </tr> 
 
 
-</table>
+</tbody></table>
  <h4> Splitting pattern </h4>
 <table>
- <tr>
+ <tbody><tr>
   <td>
   Q4.Number of neighbouring protons ? 
   </td>
  </tr>
  <tr id="qans6">
-  <td> Ans: <input type="text" id="ans6"/></td>
-  <td> <input type="button" value="Submit Answer" OnClick="checkAns('ans6','#qans6','0');" /></td>
+  <td> Ans: <input id="ans6" type="text"/></td>
+  <td> <input onclick="checkAns('ans6','#qans6','0');" type="button" value="Submit Answer"/></td>
  </tr> 
 
 
@@ -326,11 +328,12 @@ function checkAns(vary,varz,soln)
   </td>
  </tr>
  <tr id="qans7">
-  <td> Ans: <input type="text" id="ans7"/></td>
-  <td> <input type="button" value="Submit Answer" OnClick="checkAns('ans7','#qans7','1');" /></td>
+  <td> Ans: <input id="ans7" type="text"/></td>
+  <td> <input onclick="checkAns('ans7','#qans7','1');" type="button" value="Submit Answer"/></td>
  </tr> 
 
- </table>
+ </tbody></table>
 </div>
- </body> 
-</html> 
+  
+ 
+</body></html>

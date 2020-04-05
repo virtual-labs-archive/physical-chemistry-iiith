@@ -1,25 +1,27 @@
-
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
-<html> 
-<style type="text/css">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head><!--Google Tag Manager--><script class="gtm">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W59SWTR');</script><!--End Google Tag Manager--><style type="text/css">
 .horizontal_dotted_line 
 { 
 border-bottom: 1px dotted #80c080; 
 width: 100px; 
 } 
 </style>
- <head> 
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+  
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/> 
     <title>Graph Plot</title> 
-    <link href="layout.css" rel="stylesheet" type="text/css"></link> 
+    <link href="layout.css" rel="stylesheet" type="text/css"/> 
     <!--[if IE]><script language="javascript" type="text/javascript" src="../excanvas.min.js"></script><![endif]--> 
-    <script language="javascript" type="text/javascript" src="jquery.js"></script> 
-    <script language="javascript" type="text/javascript" src="jquery.flot.js"></script> 
+    <script language="javascript" src="jquery.js" type="text/javascript"></script> 
+    <script language="javascript" src="jquery.flot.js" type="text/javascript"></script> 
  </head> 
-    <body> 
+    <body><!--Google Tag Manager (noscript)--><noscript class="gtm"><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-W59SWTR" style="display:none;visibility:hidden" width="0"></iframe></noscript><!--End Google Tag Manager (noscript)--> 
  
    <table>
-   <tr>
+   <tbody><tr>
    <td>
     <div id="placeholder" style="width:600px;height:500px"></div>  
     </td>
@@ -28,7 +30,12 @@ width: 100px;
      (<span id="x">0</span>, <span id="y">0</span> * 1e-6 ). </p> 
     </td>
     </tr>
-   <table>
+   </tbody></table><br/><br/><hr/><br/><br/><h1> Report from the Voltammogram </h1><div id="Calc">
+
+ <form name="Calc" style="float:right"></form>
+ <br/>
+ <br/>
+ </div><table>
  <!--   <p>A tooltip is easy to build with a bit of jQuery code and the
     data returned from the plot.</p> 
  
@@ -1392,9 +1399,9 @@ for(i=0;i<sin.length;i++)
 });
 </script> 
 
-<br/>
-<br/>
-<hr/>
+
+
+
 <script>
 function checkAns(vary,varz,soln)
 {
@@ -1417,125 +1424,121 @@ function checkAns(vary,varz,soln)
  }
 }
 </script>
-<br/>
-<br/>
-<h1> Report from the Voltammogram </h1>
-<div id="Calc">
 
- <FORM NAME="Calc" style="float:right">
+
+
+</table><table border="4" style="float:right">
+ <tbody><tr>
+ <td>
+ <input name="Input" size="16" type="text"/>
  <br/>
- <br/>
- <TABLE BORDER=4 style="float:right">
- <TR>
- <TD>
- <INPUT TYPE="text"   NAME="Input" Size="16">
- <br>
- </TD>
- </TR>
- <TR>
- <TD>
- <INPUT TYPE="button" NAME="one"   VALUE="  1  " OnClick="Calc.Input.value += '1'">
- <INPUT TYPE="button" NAME="two"   VALUE="  2  " OnCLick="Calc.Input.value += '2'">
- <INPUT TYPE="button" NAME="three" VALUE="  3  " OnClick="Calc.Input.value += '3'">
- <INPUT TYPE="button" NAME="plus"  VALUE="  +  " OnClick="Calc.Input.value += ' + '">
- <br>
- <INPUT TYPE="button" NAME="four"  VALUE="  4  " OnClick="Calc.Input.value += '4'">
- <INPUT TYPE="button" NAME="five"  VALUE="  5  " OnCLick="Calc.Input.value += '5'">
- <INPUT TYPE="button" NAME="six"   VALUE="  6  " OnClick="Calc.Input.value += '6'">
- <INPUT TYPE="button" NAME="minus" VALUE="  -  " OnClick="Calc.Input.value += ' - '">
- <br>
- <INPUT TYPE="button" NAME="seven" VALUE="  7  " OnClick="Calc.Input.value += '7'">
- <INPUT TYPE="button" NAME="eight" VALUE="  8  " OnCLick="Calc.Input.value += '8'">
- <INPUT TYPE="button" NAME="nine"  VALUE="  9  " OnClick="Calc.Input.value += '9'">
- <INPUT TYPE="button" NAME="times" VALUE="  x  " OnClick="Calc.Input.value += ' * '">
- <br>
- <INPUT TYPE="button" NAME="clear" VALUE="  c  " OnClick="Calc.Input.value = ''">
- <INPUT TYPE="button" NAME="zero"  VALUE="  0  " OnClick="Calc.Input.value += '0'">
- <INPUT TYPE="button" NAME="DoIt"  VALUE="  =  " OnClick="Calc.Input.value = eval(Calc.Input.value)">
- <INPUT TYPE="button" NAME="div"   VALUE="  /  " OnClick="Calc.Input.value += ' / '">
- <br>
- </TD>
- </TR>
- </TABLE>
- </FORM>
-</div> 
-<div id="QuesAns">
- <table id="Ques1" border=0 CELLPADDING=5>
+ </td>
+ </tr>
  <tr>
-  <td  onMouseOver="this.bgColor = ' #C6DEFF'" onMouseOut ="this.bgColor = '#FFFFFF'">
+ <td>
+ <input name="one" onclick="Calc.Input.value += '1'" type="button" value="  1  "/>
+ <input name="two" onclick="Calc.Input.value += '2'" type="button" value="  2  "/>
+ <input name="three" onclick="Calc.Input.value += '3'" type="button" value="  3  "/>
+ <input name="plus" onclick="Calc.Input.value += ' + '" type="button" value="  +  "/>
+ <br/>
+ <input name="four" onclick="Calc.Input.value += '4'" type="button" value="  4  "/>
+ <input name="five" onclick="Calc.Input.value += '5'" type="button" value="  5  "/>
+ <input name="six" onclick="Calc.Input.value += '6'" type="button" value="  6  "/>
+ <input name="minus" onclick="Calc.Input.value += ' - '" type="button" value="  -  "/>
+ <br/>
+ <input name="seven" onclick="Calc.Input.value += '7'" type="button" value="  7  "/>
+ <input name="eight" onclick="Calc.Input.value += '8'" type="button" value="  8  "/>
+ <input name="nine" onclick="Calc.Input.value += '9'" type="button" value="  9  "/>
+ <input name="times" onclick="Calc.Input.value += ' * '" type="button" value="  x  "/>
+ <br/>
+ <input name="clear" onclick="Calc.Input.value = ''" type="button" value="  c  "/>
+ <input name="zero" onclick="Calc.Input.value += '0'" type="button" value="  0  "/>
+ <input name="DoIt" onclick="Calc.Input.value = eval(Calc.Input.value)" type="button" value="  =  "/>
+ <input name="div" onclick="Calc.Input.value += ' / '" type="button" value="  /  "/>
+ <br/>
+ </td>
+ </tr>
+ </tbody></table>
+ 
+ 
+<div id="QuesAns">
+ <table border="0" cellpadding="5" id="Ques1">
+ <tbody><tr>
+  <td onmouseout="this.bgColor = '#FFFFFF'" onmouseover="this.bgColor = ' #C6DEFF'">
   Q1.Cathodic Peak Potential E<sub>pa</sub> ? 
   </td>
  </tr>
- <tr id="qans1"   >
-  <td> Ans: <input type="text"  maxlength="4"  size=3 id="ans1"/>V</td>
-  <td> <input type="button" value="Submit Answer" OnClick="checkAns('ans1','#qans1','0.35');" /></td>
+ <tr id="qans1">
+  <td> Ans: <input id="ans1" maxlength="4" size="3" type="text"/>V</td>
+  <td> <input onclick="checkAns('ans1','#qans1','0.35');" type="button" value="Submit Answer"/></td>
  </tr> 
 
 
  <tr>
-  <td  onMouseOver="this.bgColor = ' #C6DEFF'" onMouseOut ="this.bgColor = '#FFFFFF'">
+  <td onmouseout="this.bgColor = '#FFFFFF'" onmouseover="this.bgColor = ' #C6DEFF'">
   Q2.Anodic Peak Potential E<sub>pc</sub> ? 
   </td>
  </tr>
  <tr id="qans2">
-  <td> Ans: <input type="text"   maxlength="4" size="3" id="ans2"/>V</td>
-  <td> <input type="button" value="Submit Answer" OnClick="checkAns('ans2','#qans2','0.28');" /></td>
+  <td> Ans: <input id="ans2" maxlength="4" size="3" type="text"/>V</td>
+  <td> <input onclick="checkAns('ans2','#qans2','0.28');" type="button" value="Submit Answer"/></td>
  </tr> 
 
  <tr>
-    <td  onMouseOver="this.bgColor = ' #C6DEFF'" onMouseOut ="this.bgColor = '#FFFFFF'">
+    <td onmouseout="this.bgColor = '#FFFFFF'" onmouseover="this.bgColor = ' #C6DEFF'">
   Q3.Cathodic Peak Current I<sub>pc</sub> ? 
   </td>
  </tr>
  <tr id="qans3">
-  <td> Ans: <input type="text"   maxlength="4" size="3" id="ans3"/>1e-6 A </td>
-  <td> <input type="button" value="Submit Answer" OnClick="checkAns('ans3','#qans3','2.12');" /></td>
+  <td> Ans: <input id="ans3" maxlength="4" size="3" type="text"/>1e-6 A </td>
+  <td> <input onclick="checkAns('ans3','#qans3','2.12');" type="button" value="Submit Answer"/></td>
  </tr> 
 
  <tr>
-    <td  onMouseOver="this.bgColor = ' #C6DEFF'" onMouseOut ="this.bgColor = '#FFFFFF'">
+    <td onmouseout="this.bgColor = '#FFFFFF'" onmouseover="this.bgColor = ' #C6DEFF'">
   Q4.Anodic Peak Current I<sub>pa</sub> ? 
   </td>
  </tr>
  <tr id="qans4">
-  <td> Ans: <input type="text"   maxlength="4" size="3" id="ans4"/>1e-6 A </td>
-  <td> <input type="button" value="Submit Answer" OnClick="checkAns('ans4','#qans4','2.03');" /></td>
+  <td> Ans: <input id="ans4" maxlength="4" size="3" type="text"/>1e-6 A </td>
+  <td> <input onclick="checkAns('ans4','#qans4','2.03');" type="button" value="Submit Answer"/></td>
  </tr> 
-</table>
+</tbody></table>
 <h2>Calculate the following and check for the reversibility of the reaction:</h2>
 <table>
- <tr>
-  <td  onMouseOver="this.bgColor = ' #C6DEFF'" onMouseOut ="this.bgColor = '#FFFFFF'">
+ <tbody><tr>
+  <td onmouseout="this.bgColor = '#FFFFFF'" onmouseover="this.bgColor = ' #C6DEFF'">
   Q5.E<sup>o</sup>=(E<sub>pa</sub> + E<sub>pc</sub>)/2 ? 
   </td>
  </tr>
  <tr id="qans5">
-  <td> Ans: <input type="text"   maxlength="4" size="3" id="ans5"/>V </td>
-  <td> <input type="button" value="Submit Answer" OnClick="checkAns('ans5','#qans5','0.32')" /></td>
+  <td> Ans: <input id="ans5" maxlength="4" size="3" type="text"/>V </td>
+  <td> <input onclick="checkAns('ans5','#qans5','0.32')" type="button" value="Submit Answer"/></td>
  </tr> 
 
  <tr>
-  <td  onMouseOver="this.bgColor = ' #C6DEFF'" onMouseOut ="this.bgColor = '#FFFFFF'">
-  Q6. &#916 E=(E<sub>pc</sub> - E<sub>pa</sub>)/n ? 
+  <td onmouseout="this.bgColor = '#FFFFFF'" onmouseover="this.bgColor = ' #C6DEFF'">
+  Q6. Δ E=(E<sub>pc</sub> - E<sub>pa</sub>)/n ? 
   </td>
  </tr>
  <tr id="qans6">
-  <td> Ans: <input type="text"   maxlength="4" size="3" id="ans6"/>V </td>
-  <td> <input type="button" value="Submit Answer" OnClick="checkAns('ans6','#qans6','0.07')" /></td>
+  <td> Ans: <input id="ans6" maxlength="4" size="3" type="text"/>V </td>
+  <td> <input onclick="checkAns('ans6','#qans6','0.07')" type="button" value="Submit Answer"/></td>
  </tr> 
 
  <tr>
-  <td  onMouseOver="this.bgColor = ' #C6DEFF'" onMouseOut ="this.bgColor = '#FFFFFF'">
+  <td onmouseout="this.bgColor = '#FFFFFF'" onmouseover="this.bgColor = ' #C6DEFF'">
   Q7. Ratio of Peak Currents :-I<sub>pc</sub> /I<sub>pa</sub> ? 
   </td>
  </tr>
  <tr id="qans7">
-  <td> Ans: <input type="text"   maxlength="4" size="3" id="ans7"/></td>
-  <td> <input type="button" value="Submit Answer" OnClick="checkAns('ans7','#qans7','1.04')" /></td>
+  <td> Ans: <input id="ans7" maxlength="4" size="3" type="text"/></td>
+  <td> <input onclick="checkAns('ans7','#qans7','1.04')" type="button" value="Submit Answer"/></td>
  </tr> 
- </table>
+ </tbody></table>
 
 </div>
 
- </body> 
-</html> 
+  
+ 
+</body></html>
