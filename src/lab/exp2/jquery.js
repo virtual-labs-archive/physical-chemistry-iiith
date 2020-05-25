@@ -3784,7 +3784,7 @@ function genFx( type, num ){
 jQuery.fn.extend({
 	show: function(speed,callback){
 		if ( speed ) {
-			return this.animate( genFx("show", 3), speed, callback);
+			return this.animate( genFx("show", 10000), speed, callback);
 		} else {
 			for ( var i = 0, l = this.length; i < l; i++ ){
 				var old = jQuery.data(this[i], "olddisplay");
@@ -3824,7 +3824,7 @@ jQuery.fn.extend({
 
 	hide: function(speed,callback){
 		if ( speed ) {
-			return this.animate( genFx("hide", 3), speed, callback);
+			return this.animate( genFx("hide", 100000), speed, callback);
 		} else {
 			for ( var i = 0, l = this.length; i < l; i++ ){
 				var old = jQuery.data(this[i], "olddisplay");
