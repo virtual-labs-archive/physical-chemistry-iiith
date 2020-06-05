@@ -105,7 +105,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script src="../js/jquery-1.4.2.min.js" type="text/javascript"></script>
 <script src="../js/modernizr-1.5.min.js" type="text/javascript">
 </script>
-<script type="text/javascript">
+
+<!--the following code hidden due to issue-->
+<!--<script type="text/javascript">
           $(document).ready(function(){
 
 			          $(".q2").hide();
@@ -146,9 +148,54 @@ function checkAnswer1(value,t)
 	
 	}
 }
+</script>-->
+
+<script type="text/javascript">
+          $(document).ready(function(){
+
+			          $(".q2").show();
+				  $(".q3").show();
+				  $(".q4").show();
+				  $(".q5").show();
+				  $(".q6").show();
+				  $(".q7").show();
+				  $(".q8").show();
+				  $(".q9").show();
+				  $(".q10").show();
+				  $(".success").hide();
+				  $(".failure").hide();
+				  });
+var count=0;
+function checkAnswer1(value,t)
+{
+	var t1=t+1;
+	if(value==10){
+		$(".failure").hide();
+		$(".success").show();
+		$(".q"+t).show();
+		$(".success").hide(1000);
+		$(".q"+t1).show(2000);
+		count+=1;
+	}
+	else{
+		$(".success").hide();
+		$(".failure").show();
+		$(".q"+t).show();
+		$(".failure").hide(1000);
+		$(".q"+t1).show(2000);
+	}
+	if(t1==11)
+	{
+		$(".success").hide();
+		$(".failure").hide();
+		setTimeout("alert('You secured '+ count +' out of 10')",2000);
+	}
+}
 </script>
+
+
 <form class="q1" name="q1">
-<p><b>1. 1. The most commonly used and relatively less expensive cell for routine use in IR spectroscopy is:</b><br/>
+<p><b>1. The most commonly used and relatively less expensive cell for routine use in IR spectroscopy is:</b><br/>
 <input id="q1" name="q1" onclick="checkAnswer1(this.value,1)" type="radio" value="10"/>a. Sodium chloride<br/>
 <input id="q1" name="q1" onclick="checkAnswer1(this.value,1)" type="radio" value="0"/>b. Potassium Chloride<br/>
 <input id="q1" name="q1" onclick="checkAnswer1(this.value,1)" type="radio" value="1"/>c. Glass Cells<br/>
@@ -328,6 +375,8 @@ function checkAnswer1(value,t)
 	});
 	</script>-->
 	
+
+
 
 
 
