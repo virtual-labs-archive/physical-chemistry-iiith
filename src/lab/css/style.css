@@ -9,6 +9,7 @@ Version: 1.0
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,300,700,500,600);
 body {
     overflow-x: hidden;
+    overflow-y: hidden;
     font-family:'Raleway' !important;
     min-height: 100%;
 }
